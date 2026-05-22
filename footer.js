@@ -20,7 +20,7 @@ const footerHTML = `
                 <a href="/privacy-policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
                 <a href="/terms-of-service" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
                 <a href="/refunds-policy" class="text-gray-400 hover:text-white transition-colors">Refunds Policy</a>
-                <a hhref="/contact-us" class="text-gray-400 hover:text-white transition-colors">Contact Us</a>
+                <a href="/contact-us" class="text-gray-400 hover:text-white transition-colors">Contact Us</a>
                 <a href="/pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
                 <a href="/about-us" class="text-gray-400 hover:text-white transition-colors">About Us</a>
             </div>
