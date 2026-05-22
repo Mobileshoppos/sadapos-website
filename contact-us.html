@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SadaPOS</title>
+    <meta name="description" content="Get in touch with us for reliable point-of-sale software in Pakistan and receive expert support for your business.">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        supabase: {
+                            dark: '#171717',   
+                            black: '#121212',  
+                            green: '#3ecf8e',
+                            border: '#1e1e1e'  
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-400 font-sans antialiased">
+    
+    <!-- Yahan Javascript khud Header lagayegi -->
+    <div id="header-placeholder"></div>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        
+        <!-- Page Header -->
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tighter mb-6">Contact Us</h1>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                Get in touch with us for reliable point-of-sale software in Pakistan and receive expert support for your business. Whether you need assistance with a offline-first cloud based POS system, have a sales question, or want to explore our point of sale solutions, our team is ready to help you. We offer fast and professional support to keep your business operations running smoothly. Contact us today and find the right POS system that fits your needs.
+            </p>
+        </div>
+
+        <!-- Contact Section (2 Columns: Form & Info) -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+            
+            <!-- Left Column: Formspree Form -->
+            <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 shadow-sm h-fit">
+                <h2 class="text-2xl font-bold text-white mb-2">Get in touch</h2>
+                <p class="text-gray-400 mb-8 text-sm">We're here to help you scale your business. Please simply fill in the form below. Our team will respond to you as quickly as possible.</p>
+                
+                <!-- Form Container -->
+                <div id="form-container">
+                    <form id="contact-form" action="https://formspree.io/f/mwvypygy" method="POST" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                            <input type="text" name="name" required class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Your Email</label>
+                            <input type="email" name="email" required class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600" placeholder="john@example.com">
+                        </div>
+                        <!-- Nayi Phone Number Field -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Phone Number <span class="text-gray-600 text-xs ml-1">(Optional)</span></label>
+                            <input type="tel" name="phone" class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600" placeholder="+92 300 1234567">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                            <textarea name="message" rows="5" required class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600 resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="w-full bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-6 py-3 rounded-md text-base font-bold transition-all shadow-[0_0_15px_rgba(62,207,142,0.1)] flex justify-center items-center gap-2">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Success Message (Shuru mein chupa hua hoga) -->
+                <div id="success-message" class="hidden h-full flex-col items-center justify-center text-center py-12">
+                    <div class="w-16 h-16 bg-[#3ecf8e]/10 border border-[#3ecf8e]/20 rounded-full flex items-center justify-center mb-6 text-[#3ecf8e] mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Message Sent Successfully!</h3>
+                    <p class="text-gray-400 mb-8">Thank you for reaching out. Our team will review your message and get back to you shortly.</p>
+                    <button onclick="resetForm()" class="text-[#3ecf8e] hover:text-white transition-colors text-sm font-medium border border-[#3ecf8e]/30 px-4 py-2 rounded-md hover:bg-[#3ecf8e]/10">
+                        Send another message
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Info Cards -->
+            <div class="space-y-6">
+                <!-- Info Card 1 -->
+                <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 hover:border-[#3ecf8e]/30 transition-all">
+                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-lg flex items-center justify-center mb-6 text-[#3ecf8e]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">How can we help?</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        We offer full support for point of sale software in Pakistan, from cloud based POS systems to complete retail solutions. Whether you need technical help, setup guidance, or details about our POS system features, our team is ready to assist you quickly and reliably. We review every request carefully to find the best solution and keep your business running smoothly.
+                    </p>
+                </div>
+
+                <!-- Info Card 2 -->
+                <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 hover:border-[#3ecf8e]/30 transition-all">
+                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-lg flex items-center justify-center mb-6 text-[#3ecf8e]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Trusted SadaPOS Solutions</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        SadaPOS brings reliable and modern point-of-sale software to businesses across Pakistan. Our cloud-based POS system makes it easy to manage your sales, inventory, and customer information all in one place.
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        We provide complete POS solutions for retail shops, restaurants, and growing businesses. With our simple yet powerful point-of-sale system, you can run your daily tasks smoothly, reduce mistakes, and make smarter decisions for your business.
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Our mission is to offer secure, flexible, and user-friendly POS software that helps your business grow quickly, even in a fast-changing market.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="max-w-3xl mx-auto text-center relative z-10 pb-20">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tighter">Frequently Asked Questions</h2>
+            <p class="text-gray-400 text-lg mb-12">Get answers to common questions about our Sada POS system, retail point of sale software, and POS support services. Learn how our easy-to-use point of sale solutions and business management tools can help your business grow efficiently.</p>
+
+            <div class="text-left space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
+                        <span class="text-lg">Can I try a free demo of Sada POS system?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                        Yes, you can start with the free plan, and just contact us for a demo of the growth or pro plans. We will give you a free demo of our online POS system and other solutions.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
+                        <span class="text-lg">Which types of businesses can use Sada POS?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                        Our POS software works for many businesses, like shops, restaurants, and any other business that wants to easily track sales, stock and services.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
+                        <span class="text-lg">How fast do you reply to questions?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                        Our team usually replies within 24 hours with clear help and support for your questions.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Final Call to Action (CTA) Section -->
+        <section class="mt-10 max-w-4xl mx-auto text-center relative z-10 pb-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter leading-tight">
+                Ready to Start Growing Your Business with SadaPOS?
+            </h2>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+                Still handling sales and daily work by hand? SadaPOS helps you automate your business with a powerful offline-first point of sale software in Pakistan. Save time, reduce mistakes, and boost your efficiency. Upgrade to a smart cloud-based POS system and easily manage everything from one place.
+            </p>
+            <a href="https://app.sadapos.com" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
+                Start Now for Free
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Yahan Javascript khud Footer lagayegi -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Header aur Footer ki Javascript files -->
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+    <!-- Formspree AJAX Submission Script -->
+    <script>
+        const form = document.getElementById('contact-form');
+        const formContainer = document.getElementById('form-container');
+        const successMessage = document.getElementById('success-message');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Yeh page ko redirect hone se rokega
+            
+            // Button ko loading state mein badalna
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = `<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-[#121212]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Sending...`;
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Form chupa dein aur Success message dikhayein
+                    formContainer.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                    successMessage.classList.add('flex');
+                    form.reset();
+                } else {
+                    alert("Oops! There was a problem submitting your form.");
+                }
+            } catch (error) {
+                alert("Oops! There was a problem submitting your form.");
+            } finally {
+                // Button ko wapis normal halat mein lana
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Naya message bhejne ke liye form wapis lana
+        function resetForm() {
+            successMessage.classList.add('hidden');
+            successMessage.classList.remove('flex');
+            formContainer.classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
