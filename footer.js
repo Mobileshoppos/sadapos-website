@@ -17,12 +17,12 @@ const footerHTML = `
 
             <!-- Links Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-12 text-sm">
-                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                <a href="refunds-policy.html" class="text-gray-400 hover:text-white transition-colors">Refunds Policy</a>
-                <a href="contact-us.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a>
-                <a href="pricing.html" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
-                <a href="about-us.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                <a href="/privacy-policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="/terms-of-service" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                <a href="/refunds-policy" class="text-gray-400 hover:text-white transition-colors">Refunds Policy</a>
+                <a hhref="/contact-us" class="text-gray-400 hover:text-white transition-colors">Contact Us</a>
+                <a href="/pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
+                <a href="/about-us" class="text-gray-400 hover:text-white transition-colors">About Us</a>
             </div>
 
             <!-- Copyright -->

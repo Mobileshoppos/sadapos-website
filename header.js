@@ -4,17 +4,17 @@ const headerHTML = `
             <div class="flex items-center justify-between h-16">
                 <!-- Logo aur Title -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="sada-pos-logo.png" alt="SadaPOS Logo" class="h-10 w-auto">
                     </a>
                 </div>
                 
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Home</a>
-                    <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Features</a>
-                    <a href="pricing.html" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Pricing</a>
-                    <a href="contact-us.html" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
+                    <a href="/" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="/" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Features</a>
+                    <a href="/pricing" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Pricing</a>
+                    <a href="/contact-us" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
                 </nav>
 
                 <!-- Call to Action Button -->
@@ -38,10 +38,10 @@ const headerHTML = `
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden border-t border-[#1e1e1e] bg-[#171717]">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Home</a>
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Features</a>
-                <a href="pricing.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Pricing</a>
-                <a href="contact-us.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Contact</a>
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Home</a>
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Features</a>
+                <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Pricing</a>
+                <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Contact</a>
                 <a href="https://app.sadapos.com" class="block mt-4 text-center bg-[#3ecf8e] text-[#121212] px-4 py-2 rounded-md text-base font-bold">Go to App</a>
             </div>
         </div>
