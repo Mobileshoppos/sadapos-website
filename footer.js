@@ -11,7 +11,7 @@ const footerHTML = `
             </div>
 
             <!-- Description -->
-            <p class="text-gray-500 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p class="text-gray-400 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
                 The all-in-one POS system. Precision inventory, automated financials, and global sync technology designed for all type of retailers and wholesale businesses of all sizes.
             </p>
 
@@ -26,7 +26,7 @@ const footerHTML = `
             </div>
 
             <!-- Copyright -->
-            <div class="text-gray-600 text-xs border-t border-gray-900 pt-8">
+            <div class="text-gray-400 text-xs border-t border-[#1e1e1e] pt-8">
                 &copy; 2025 - 2026 SadaPOS. All Rights Reserved.
             </div>
         </div>
