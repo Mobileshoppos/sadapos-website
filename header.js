@@ -12,7 +12,7 @@ const headerHTML = `
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8">
                     <a href="/" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Home</a>
-                    <a href="/" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Features</a>
+                    <a href="/features" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Features</a>
                     <a href="/pricing" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Pricing</a>
                     <a href="/contact-us" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
                 </nav>
