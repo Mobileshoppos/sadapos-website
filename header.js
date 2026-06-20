@@ -19,7 +19,7 @@ const headerHTML = `
 
                 <!-- Call to Action Button -->
                 <div class="hidden md:flex">
-                    <a href="https://app.sadapos.com" class="bg-[#3ecf8e] hover:bg-[#3ecf8e]/90 text-[#121212] px-5 py-2 rounded-md text-sm font-bold transition-all shadow-[0_0_15px_rgba(62,207,142,0.2)]">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-[#3ecf8e] hover:bg-[#3ecf8e]/90 text-[#121212] px-5 py-2 rounded-md text-sm font-bold transition-all shadow-[0_0_15px_rgba(62,207,142,0.2)]">
                         Go to App
                     </a>
                 </div>
@@ -42,7 +42,7 @@ const headerHTML = `
                 <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Features</a>
                 <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Pricing</a>
                 <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-[#1e1e1e]">Contact</a>
-                <a href="https://app.sadapos.com" class="block mt-4 text-center bg-[#3ecf8e] text-[#121212] px-4 py-2 rounded-md text-base font-bold">Go to App</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="block mt-4 text-center bg-[#3ecf8e] text-[#121212] px-4 py-2 rounded-md text-base font-bold">Go to App</a>
             </div>
         </div>
     </header>

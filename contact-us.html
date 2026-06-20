@@ -61,6 +61,21 @@
 
   gtag('config', 'AW-18032729402');
 </script>
+<!-- Event snippet for Sign-up conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18032729402/o9ZdCJyIt8IcELq61pZD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <body class="bg-[#121212] text-gray-400 font-sans antialiased">
     
     <!-- Yahan Javascript khud Header lagayegi -->
@@ -210,7 +225,7 @@
             <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
                 Still handling sales and daily work by hand? SadaPOS helps you automate your business with a powerful offline-first point of sale software in Pakistan. Save time, reduce mistakes, and boost your efficiency. Upgrade to a smart cloud-based POS system and easily manage everything from one place.
             </p>
-            <a href="https://app.sadapos.com" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
+            <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
                 Start Now for Free
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
             </a>

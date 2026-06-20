@@ -130,6 +130,21 @@
 
   gtag('config', 'AW-18032729402');
 </script>
+<!-- Event snippet for Sign-up conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18032729402/o9ZdCJyIt8IcELq61pZD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <body class="bg-[#121212] text-gray-400 font-sans antialiased">
     
     <!-- Yahan Javascript khud Header lagayegi -->
@@ -147,7 +162,7 @@
                 Control your business with reliable offline-first and cloud-based POS software solutions designed for seamless sales, intelligent inventory management, and real-time reporting.
             </p>
             <div class="flex justify-center">
-                <a href="https://app.sadapos.com" class="group flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="group flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
                     Start Now for Free
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -365,7 +380,7 @@
                 <div class="text-center md:text-right md:border-l md:border-[#1e1e1e] md:pl-8">
                     <div class="text-3xl font-bold text-white mb-1">Free</div>
                     <p class="text-gray-400 text-xs mb-4">Forever</p>
-                    <a href="https://app.sadapos.com" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-6 py-2.5 rounded-md text-sm font-bold transition-all">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-6 py-2.5 rounded-md text-sm font-bold transition-all">
                         Start Now for Free
                     </a>
                 </div>
@@ -440,7 +455,7 @@
             <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
                 Stop guessing and start scaling. Join thousands of retailers who trust SadaPOS for their daily operations. Have questions? <a href="/contact-us" class="text-[#3ecf8e] hover:underline">Contact us</a> or read <a href="/about-us" class="text-[#3ecf8e] hover:underline">about our story</a>. You can also review our <a href="/privacy-policy" class="text-[#3ecf8e] hover:underline">Privacy Policy</a>, <a href="/terms-of-service" class="text-[#3ecf8e] hover:underline">Terms of Service</a>, and <a href="/refunds-policy" class="text-[#3ecf8e] hover:underline">Refunds Policy</a>.
             </p>
-            <a href="https://app.sadapos.com" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
+            <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
                 Start Now for Free
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
             </a>

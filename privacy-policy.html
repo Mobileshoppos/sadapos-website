@@ -61,6 +61,21 @@
 
   gtag('config', 'AW-18032729402');
 </script>
+<!-- Event snippet for Sign-up conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18032729402/o9ZdCJyIt8IcELq61pZD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <body class="bg-[#121212] text-gray-400 font-sans antialiased">
     
     <!-- Yahan Javascript khud Header lagayegi -->
