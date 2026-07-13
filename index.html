@@ -52,6 +52,7 @@
         }
     </script>
     <style>
+        html { font-size: 17px; } /* Yeh line poori website ke text size ko globally 2px chota kar degi */
         body { font-family: 'Inter', sans-serif; }
     </style>
 
@@ -145,352 +146,1517 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-<body class="bg-[#121212] text-gray-400 font-sans antialiased">
+<body class="bg-gray-50 text-gray-600 font-sans antialiased">
     
-    <!-- Yahan Javascript khud Header lagayegi -->
-    <div id="header-placeholder"></div>
+    <!-- Header Section (SadaPOS Light ERP Mega Menu) -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/">
+                        <img src="sada-pos-logo.png" alt="SadaPOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu - Vertically Aligned correctly using items-center -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Home</a>
+                    
+                    <!-- Solutions Mega Menu (Pure CSS Hover, 100% SEO Friendly & Balanced Layout) -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors focus:outline-none py-5">
+                            Solutions
+                            <svg class="w-4 h-4 text-gray-400 group-hover:text-[#ED1A3B] transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <!-- Mega Menu Dropdown Container -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0 hidden group-hover:block w-[780px] transition-all duration-300">
+                            <!-- divide-x adds vertical light divider lines between columns -->
+                            <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl grid grid-cols-3 divide-x divide-gray-100 mt-2">
+                                
+                                <!-- Col 1: Business Solutions -->
+                                <div class="pr-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Business Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">POS Billing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Inventory Tracking</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Customer Ledgers</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Col 2: Industry Solutions -->
+                                <div class="px-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Industry Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/pos-for-mobile-business" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Mobile Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Grocery Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pharmacies</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Electronics Store</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Wholesale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Clothing Store</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-    <!-- Main Content Area -->
-    <main class="container mx-auto px-4 pt-10 md:pt-16 pb-32 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto relative z-10">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-[1.1] mb-6">
-                Offline-first and <br class="hidden md:block" />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">cloud-based</span> <br class="hidden md:block" /> 
-                point of sale software.
-            </h1>
-            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Control your business with reliable offline-first and cloud-based POS software solutions designed for seamless sales, intelligent inventory management, and real-time reporting.
-            </p>
-            <div class="flex justify-center">
-                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="group flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
-                    Start Now for Free
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </a>
+                                <!-- Col 3: Resources -->
+                                <div class="pl-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Resources</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Features</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pricing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/about-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">About Us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Contact Us</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/pricing" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Pricing</a>
+                    <a href="/contact-us" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Contact</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden md:flex">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-[#ED1A3B] hover:bg-[#D91532] text-white px-5 py-2 rounded-md text-sm font-bold transition-all shadow-md shadow-red-500/10">
+                        Go to App
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu" class="text-gray-600 hover:text-gray-950 focus:outline-none">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Naya "Key Features" Section shuru -->
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white shadow-inner">
+            <div class="px-6 pt-2 pb-4 space-y-1">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Home</a>
+                
+                <!-- Mobile Solutions Collapsible Accordion (Pure CSS & lightweight JS) -->
+                <div>
+                    <button id="mobile-solutions-btn" class="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors focus:outline-none">
+                        <span>Solutions</span>
+                        <svg id="mobile-solutions-arrow" class="w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Collapsible Solutions Content -->
+                    <div id="mobile-solutions-content" class="hidden pl-6 pr-3 py-2 space-y-1 bg-gray-50/50 rounded-xl mt-1 border border-gray-200/50 shadow-inner">
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-2 pb-1 pl-3">Business</div>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">POS Billing</a>
+                        <a href="/features" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Inventory Tracking</a>
+                        <a href="/pricing" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Customer Ledgers</a>
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-3 pb-1 pl-3">Industries</div>
+                        <a href="/pos-for-mobile-business" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Mobile Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Grocery Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Pharmacies</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Electronics Store</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Wholesale</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Clothing Store</a>
+                    </div>
+                </div>
+
+                <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Pricing</a>
+                <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Contact</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="block mt-4 text-center bg-[#ED1A3B] text-white px-4 py-2 rounded-md text-base font-bold">Go to App</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Script directly embedded to handle menu & accordion -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+
+            // Mobile Solutions Accordion Toggle Logic
+            const solutionsBtn = document.getElementById('mobile-solutions-btn');
+            const solutionsContent = document.getElementById('mobile-solutions-content');
+            const solutionsArrow = document.getElementById('mobile-solutions-arrow');
+            if (solutionsBtn && solutionsContent && solutionsArrow) {
+                solutionsBtn.addEventListener('click', () => {
+                    solutionsContent.classList.toggle('hidden');
+                    solutionsArrow.classList.toggle('rotate-180');
+                });
+            }
+        });
+    </script>
+
+    <!-- Main Content Area - Reduced bottom padding to fix empty footer gap -->
+    <main class="container mx-auto px-6 md:px-12 lg:px-16 pt-4 md:pt-6 pb-12 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-center lg:text-left relative z-10 max-w-7xl mx-auto">
+            
+            <!-- Left Column: Text aur Vyapar Style Trust Badges -->
+            <div class="lg:col-span-7 flex flex-col justify-center">
+                
+                <!-- Trust Badge (Vyapar style tiny pill badge) -->
+                <div class="inline-flex items-center justify-center lg:justify-start gap-2 mb-6">
+                    <span class="bg-[#ED1A3B]/10 border border-[#ED1A3B]/20 text-[#ED1A3B] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                        <!-- Three Sync Indicator Bulbs (Red, Yellow, Green) - Green is now pulsating -->
+                        <span class="flex items-center gap-1 shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#ED1A3B]"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        </span>
+                        Trusted by 5,000+ Retailers
+                    </span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl md:text-[2.25rem] lg:text-[1.85rem] xl:text-[2.25rem] 2xl:text-[2.5rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#ED1A3B] to-orange-500 tracking-tight leading-tight mb-6">
+                    Point of Sale Software
+                </h1>
+
+                <p class="text-base md:text-lg text-gray-600 mb-8 max-w-xl leading-relaxed lg:mx-0 mx-auto">
+                    Manage point of sale, inventory, payments, accounting, and CRM with one powerful, offline-first, cloud-based retail management system. SadaPOS helps businesses automate sales, track stock, and simplify daily operations.
+                </p>
+
+                <!-- Trust Pills (Vyapar style checkmarks) - Spacing adjusted for symmetry -->
+                <div class="flex flex-wrap gap-2.5 mb-5 justify-center lg:justify-start text-xs font-bold text-emerald-600">
+                    <span class="bg-emerald-50 px-3.5 py-2 rounded-md border border-emerald-100 flex items-center gap-1">✔ Barcode Support</span>
+                    <span class="bg-emerald-50 px-3.5 py-2 rounded-md border border-emerald-100 flex items-center gap-1">✔ Fast Billing</span>
+                    <span class="bg-emerald-50 px-3.5 py-2 rounded-md border border-emerald-100 flex items-center gap-1">✔ Offline Sync</span>
+                </div>
+
+                <!-- Action CTA & Sub-text -->
+                <div class="flex flex-col items-center lg:items-start">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="group flex items-center justify-center gap-2 bg-[#ED1A3B] text-white hover:bg-[#ED1A3B]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-lg shadow-red-500/10 hover:shadow-red-500/25">
+                        Start Now for Free
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <!-- Margin-top adjusted to mt-5 to match the top spacing perfectly -->
+                    <div class="mt-5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500 justify-center lg:justify-start">
+                        <span>🛡 100% Safe & Secure</span>
+                        <span>⚡ No Credit Card Required</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Beautiful Mockup Screenshot (Vyapar Style) -->
+            <div class="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center">
+                <!-- Background Decorative Blob shadow for high-quality visual feel -->
+                <div class="absolute -inset-4 bg-gradient-to-tr from-[#ED1A3B]/10 to-orange-400/5 rounded-full blur-3xl opacity-70 pointer-events-none"></div>
+                
+                <!-- Mockup Wrapper -->
+                <div class="relative bg-white border border-gray-200 p-3 rounded-2xl shadow-2xl max-w-md md:max-w-lg lg:max-w-full">
+                    <!-- Dummy Image using the software interface webp from the project -->
+                    <img src="point-of-sale-software.webp" alt="SadaPOS Point of Sale Software Mockup Interface" class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Naya "Industries" Section (Vyapar-Style Infinite Carousel for Pakistan) - Hero ke foran baad -->
+        <section class="mt-16 py-12 bg-white border-y border-gray-200 relative z-10 overflow-hidden rounded-2xl shadow-sm">
+            
+            <style>
+                @keyframes infiniteScroll {
+                    from { transform: translateX(0); }
+                    to { transform: translateX(-50%); }
+                }
+                .scroll-container {
+                    display: flex;
+                    width: max-content;
+                    animation: infiniteScroll 25s linear infinite;
+                }
+                .scroll-container-reverse {
+                    display: flex;
+                    width: max-content;
+                    animation: infiniteScroll 30s linear infinite reverse;
+                }
+            </style>
+
+            <div class="max-w-7xl mx-auto px-6 text-center mb-8">
+                <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight whitespace-nowrap">
+                    Trusted by <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ED1A3B] to-orange-500">Thousands</span> of Businesses
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base mt-2">
+                    Join the leading retailers already managing their shops with SadaPOS
+                </p>
+            </div>
+
+            <!-- Carousel Row 1 (Moving Left) - Colorful Text -->
+            <div class="w-full overflow-hidden flex mb-4">
+                <div class="scroll-container gap-3">
+                    <!-- Set 1 -->
+                    <span class="bg-gray-50 text-blue-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Mobile & Accessories</span>
+                    <span class="bg-gray-50 text-green-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Karyana & General Stores</span>
+                    <span class="bg-gray-50 text-teal-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Pharmacies & Medical Stores</span>
+                    <span class="bg-gray-50 text-purple-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Garments & Clothing</span>
+                    <span class="bg-gray-50 text-orange-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Electronics & Appliances</span>
+                    <span class="bg-gray-50 text-indigo-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Wholesale & Distribution</span>
+                    
+                    <!-- Set 2 (Duplicate for Seamless Loop) -->
+                    <span class="bg-gray-50 text-blue-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Mobile & Accessories</span>
+                    <span class="bg-gray-50 text-green-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Karyana & General Stores</span>
+                    <span class="bg-gray-50 text-teal-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Pharmacies & Medical Stores</span>
+                    <span class="bg-gray-50 text-purple-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Garments & Clothing</span>
+                    <span class="bg-gray-50 text-orange-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Electronics & Appliances</span>
+                    <span class="bg-gray-50 text-indigo-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Wholesale & Distribution</span>
+                </div>
+            </div>
+
+            <!-- Carousel Row 2 (Moving Right) - Baghair Icons Ke -->
+            <div class="w-full overflow-hidden flex mb-4">
+                <div class="scroll-container-reverse gap-3">
+                    <!-- Set 1 -->
+                    <span class="bg-gray-50 text-fuchsia-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Jewellery Shops</span>
+                    <span class="bg-gray-50 text-slate-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Hardware & Paint</span>
+                    <span class="bg-gray-50 text-amber-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Bakeries & Sweet Shops</span>
+                    <span class="bg-gray-50 text-cyan-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Book & Stationery</span>
+                    <span class="bg-gray-50 text-rose-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Footwear Stores</span>
+                    <span class="bg-gray-50 text-pink-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Beauty Salons & Cosmetics</span>
+                    <span class="bg-gray-50 text-red-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Auto Parts & Repair</span>
+                    
+                    <!-- Set 2 (Duplicate for Seamless Loop) -->
+                    <span class="bg-gray-50 text-fuchsia-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Jewellery Shops</span>
+                    <span class="bg-gray-50 text-slate-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Hardware & Paint</span>
+                    <span class="bg-gray-50 text-amber-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Bakeries & Sweet Shops</span>
+                    <span class="bg-gray-50 text-cyan-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Book & Stationery</span>
+                    <span class="bg-gray-50 text-rose-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Footwear Stores</span>
+                    <span class="bg-gray-50 text-pink-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Beauty Salons & Cosmetics</span>
+                    <span class="bg-gray-50 text-red-600 px-6 py-3 rounded-full font-semibold border border-gray-200 shadow-sm whitespace-nowrap">Auto Parts & Repair</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Naya "Value Badges" Section (Vyapar-Style - No Background Container) -->
+        <section class="mt-16 max-w-7xl mx-auto relative z-10 px-6">
+            
+            <!-- 5 Columns Responsive Grid directly on the page background -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-4 items-start justify-center text-center">
+                
+                <!-- Badge 1: Happy Users - Set to 5,000+ for consistency -->
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-[#ED1A3B] flex items-center justify-center border border-red-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mt-4 mb-1">5,000+</h3>
+                    <p class="text-xs text-gray-500 font-medium">Happy Store Owners</p>
+                </div>
+
+                <!-- Badge 2: Free App -->
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-[#ED1A3B] flex items-center justify-center border border-red-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mt-4 mb-1">Free</h3>
+                    <p class="text-xs text-gray-500 font-medium">Web & Mobile Access</p>
+                </div>
+
+                <!-- Badge 3: Offline-First Tech -->
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-[#ED1A3B] flex items-center justify-center border border-red-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mt-4 mb-1">Offline-First</h3>
+                    <p class="text-xs text-gray-500 font-medium">Works Without Internet</p>
+                </div>
+
+                <!-- Badge 4: Multi-Device -->
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-[#ED1A3B] flex items-center justify-center border border-red-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mt-4 mb-1">Multi-Device</h3>
+                    <p class="text-xs text-gray-500 font-medium">Sync Phone & Computer</p>
+                </div>
+
+                <!-- Badge 5: Multi-User -->
+                <div class="flex flex-col items-center col-span-2 md:col-span-1 mx-auto">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-[#ED1A3B] flex items-center justify-center border border-red-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mt-4 mb-1">Multi-User</h3>
+                    <p class="text-xs text-gray-500 font-medium">Staff Role Permissions</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Naya "What is Light ERP" Section -->
+        <section class="mt-20 max-w-7xl mx-auto text-center relative z-10 px-6 py-12 md:py-16 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                
+                <!-- Tiny Pill Badge -->
+                <div class="inline-flex items-center justify-center gap-2 mb-6">
+                    <span class="bg-[#ED1A3B]/10 border border-[#ED1A3B]/20 text-[#ED1A3B] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Getting Started
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tighter mb-8 leading-tight">
+                    What is a <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ED1A3B] to-orange-500">Light ERP</span> System?
+                </h2>
+
+                <!-- Explanatory Paragraphs -->
+                <div class="space-y-6 text-base md:text-lg text-gray-600 leading-relaxed text-center">
+                    <p>
+                        A Light ERP (Enterprise Resource Planning) goes far beyond standard POS billing. It is a complete retail management system that helps businesses manage invoices, CRM, accounting, and complex inventory like warranties, batches, and expiries from a single screen.
+                    </p>
+                    <p>
+                        SadaPOS is a highly optimized, offline-first Light ERP. It combines fast checkout, advanced inventory tracking, customer ledgers, and detailed financial reports in one easy-to-use platform. It helps businesses in Pakistan automate sales and simplify daily operations without the complexity of heavy, traditional ERPs.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Naya "Interactive Tabs" Section (Vyapar-Style) -->
+        <section class="mt-24 max-w-7xl mx-auto text-left relative z-10 px-4">
+            
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center justify-center gap-2 mb-4">
+                    <span class="bg-[#ED1A3B]/10 text-[#ED1A3B] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Product Overview
+                    </span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                    How SadaPOS <span class="text-[#ED1A3B]">Software</span> <br class="hidden md:block" /> Solves Everyday Business Challenges
+                </h2>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                    From offline billing to real-time inventory tracking, SadaPOS gives you everything you need to streamline your store operations.
+                </p>
+            </div>
+
+            <!-- Tab Buttons (Pills) - Adjusted to fit in one row -->
+            <div class="flex flex-wrap lg:flex-nowrap justify-center gap-2 sm:gap-4 mb-12" id="feature-tabs">
+                <button class="tab-btn active bg-[#ED1A3B] text-white border border-[#ED1A3B] px-4 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap shadow-md shadow-red-500/20" data-target="tab-billing">Offline-First Billing</button>
+                <button class="tab-btn inactive bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap" data-target="tab-inventory">Inventory Tracking</button>
+                <button class="tab-btn inactive bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap" data-target="tab-ledgers">Customer Ledgers</button>
+                <button class="tab-btn inactive bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap" data-target="tab-reports">Business Reports</button>
+            </div>
+
+            <!-- Tab Content Panels -->
+            <div id="tab-panels" class="max-w-7xl mx-auto bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden p-6 md:p-10 lg:p-12">
+                
+                <!-- Panel 1: Offline Billing -->
+                <div id="tab-billing" class="tab-panel flex flex-col lg:flex-row items-center gap-10">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="point-of-sale-software.webp" alt="Offline Billing POS" class="rounded-xl w-full h-auto border border-gray-100 shadow-sm">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <!-- Icon aur Heading 1 Row Mein -->
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-[#ED1A3B] shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 leading-tight">Uninterrupted Offline Billing</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">SadaPOS helps you create accurate bills every time without worrying about internet outages. It automatically syncs your data when you are back online, ensuring your checkout never stops.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Continue selling with zero internet connection</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Automatic background cloud sync</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Fast barcode scanning and receipt printing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Inventory Tracking (Hidden by default) -->
+                <div id="tab-inventory" class="tab-panel hidden flex-col lg:flex-row items-center gap-10">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="point-of-sale-system.jpg" alt="Inventory Tracking" class="rounded-xl w-full h-auto border border-gray-100 shadow-sm">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <!-- Icon aur Heading 1 Row Mein -->
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-[#ED1A3B] shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 leading-tight">Real-Time Inventory Tracking</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Track your stock in real-time so you always stay in control. You can monitor item availability, track unique serial numbers, and receive timely low-stock alerts.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Automatic stock deduction after every sale</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Track unique serial numbers and IMEIs</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Low stock alerts to avoid stockouts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Customer Ledgers (Hidden by default) -->
+                <div id="tab-ledgers" class="tab-panel hidden flex-col lg:flex-row items-center gap-10">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="point-of-sale-software.webp" alt="Customer Ledgers" class="rounded-xl w-full h-auto border border-gray-100 shadow-sm">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <!-- Icon aur Heading 1 Row Mein -->
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-[#ED1A3B] shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 leading-tight">Built-In Customer Ledgers</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Manage your customer balances and supplier payments in one simple system. Every transaction is automatically recorded, replacing manual notebooks with accurate digital records.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Track pending balances and dues instantly</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Manage supplier payments and purchase history</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Maintain clear financial records for every party</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Business Reports (Hidden by default) -->
+                <div id="tab-reports" class="tab-panel hidden flex-col lg:flex-row items-center gap-10">
+                    <div class="lg:w-1/2 w-full">
+                        <img src="point-of-sale-software-reports.jpg" alt="Business Reports" class="rounded-xl w-full h-auto border border-gray-100 shadow-sm">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <!-- Icon aur Heading 1 Row Mein -->
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-[#ED1A3B] shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 leading-tight">Actionable Business Reports</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">SadaPOS helps you track your business performance with detailed and easy-to-understand reports. Check sales, profits, and expenses anytime to make better decisions.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> View daily sales and profit performance</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Identify your best-selling products</li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600"><span class="text-emerald-500 mt-0.5">◼</span> Generate detailed reports for accounting</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Naya "Advanced Key Features" Section (Vyapar-Style with 3 Bottom Cards) -->
+        <section class="mt-32 max-w-7xl mx-auto text-left relative z-10 px-4">
+            
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                    Key Features of <span class="text-[#ED1A3B]">SadaPOS Software</span>
+                </h2>
+            </div>
+
+            <!-- Tab Buttons (Pills) -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="adv-tab-btn active bg-[#ED1A3B] text-white border border-[#ED1A3B] px-5 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer shadow-md shadow-red-500/20" data-target="adv-tab-barcode">Fast Barcode Billing</button>
+                <button class="adv-tab-btn inactive bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-5 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer" data-target="adv-tab-counter">Multi-Counter Billing</button>
+                <button class="adv-tab-btn inactive bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-5 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer" data-target="adv-tab-inventory">Smart Inventory</button>
+                <button class="adv-tab-btn inactive bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50 px-5 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer" data-target="adv-tab-invoice">Invoice Sharing</button>
+            </div>
+
+            <!-- Tab Content Panels -->
+            <div class="max-w-7xl mx-auto">
+                
+                <!-- Panel 1: Fast Barcode Billing -->
+                <div id="adv-tab-barcode" class="adv-tab-panel flex flex-col transition-opacity duration-300">
+                    <!-- Top Row: Text & Image -->
+                    <div class="flex flex-col lg:flex-row gap-12 items-center mb-10">
+                        <div class="lg:w-[55%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Fast Barcode-Based POS Billing</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">SadaPOS helps you create accurate bills every time without worrying about manual mistakes. It automatically calculates totals, taxes, and discounts so your billing stays smooth and reliable.</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">This feature not only reduces checkout time during peak hours but also improves customer satisfaction by minimizing errors and increasing daily billing efficiency.</p>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Reduce checkout time during peak hours</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Minimize manual billing errors</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Improve customer satisfaction</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Increase daily billing efficiency</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-[45%] w-full bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100 shadow-inner">
+                            <img src="point-of-sale-software.webp" alt="Barcode Billing" class="w-full h-auto rounded-xl shadow-sm border border-gray-200 bg-white">
+                        </div>
+                    </div>
+                    <!-- Bottom Row: 3 Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">How it works:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Connect a barcode scanner to your POS billing setup. Scan product codes to instantly fetch item details and generate the bill automatically.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Key Benefits:</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> 80% Faster checkout process</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Error-free billing</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Real-time stock deduction</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Mini use case:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">A supermarket using barcode-based POS billing reduced customer wait time by 40% during evening rush hours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Multi-Counter Billing (Hidden by default) -->
+                <div id="adv-tab-counter" class="adv-tab-panel hidden flex-col transition-opacity duration-300">
+                    <div class="flex flex-col lg:flex-row gap-12 items-center mb-10">
+                        <div class="lg:w-[55%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Manage Multiple Billing Counters Seamlessly</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">When your store operates with more than one billing counter, keeping everything organized is a challenge. SadaPOS helps you seamlessly manage multiple counters by syncing them in real-time.</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">Any change made at one counter—whether a sale or stock update—is immediately reflected across all counters without manual intervention.</p>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Coordinate sales across all counters</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Streamline transactions effortlessly</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Centralized reporting and insights</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-[45%] w-full bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100 shadow-inner">
+                            <img src="point-of-sale-system.jpg" alt="Multi Counter Billing" class="w-full h-auto rounded-xl shadow-sm border border-gray-200 bg-white">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">How it works:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Setup multiple devices on the same network or cloud. All devices sync data instantly to the main server, allowing simultaneous billing.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Key Benefits:</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> No stock mismatch</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> 100% Accurate unified reports</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Easy staff performance tracking</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Mini use case:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">A busy grocery store avoided duplicate billing errors after switching to centralized multi-counter POS software.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Smart Inventory (Hidden by default) -->
+                <div id="adv-tab-inventory" class="adv-tab-panel hidden flex-col transition-opacity duration-300">
+                    <div class="flex flex-col lg:flex-row gap-12 items-center mb-10">
+                        <div class="lg:w-[55%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Complete Control Over Your Stock</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">SadaPOS allows you to track inventory efficiently. Whether you manage simple products or items with unique serial numbers and IMEIs, the system keeps your stock accurate.</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">Generate barcodes for new items, print labels instantly, and simplify product tracking to reduce manual errors and prevent stockouts.</p>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Generate custom barcodes</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Print product labels instantly</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Track IMEI and Serial numbers</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-[45%] w-full bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100 shadow-inner">
+                            <img src="point-of-sale-software-reports.jpg" alt="Inventory Management" class="w-full h-auto rounded-xl shadow-sm border border-gray-200 bg-white">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">How it works:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">Add product details, generate barcodes, print labels, and attach them to products for easy scanning and tracking.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Key Benefits:</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Organized inventory</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Prevent theft and loss</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Better stock management</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Mini use case:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">A mobile shop eliminated missing inventory issues by tracking every device via unique IMEI numbers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Invoice Sharing (Hidden by default) -->
+                <div id="adv-tab-invoice" class="adv-tab-panel hidden flex-col transition-opacity duration-300">
+                    <div class="flex flex-col lg:flex-row gap-12 items-center mb-10">
+                        <div class="lg:w-[55%] w-full">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Share Invoices Instantly via WhatsApp</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">SadaPOS makes it easy to share invoices instantly via WhatsApp and SMS, catering to modern customer preferences for digital bills.</p>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">By eliminating the need for printed invoices, you reduce printing costs, making the process more cost-effective and environmentally friendly.</p>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Instant WhatsApp invoice sharing</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> SMS billing option</li>
+                                <li class="flex items-center gap-2.5 text-sm text-gray-700"><span class="text-[#ED1A3B] font-bold text-base">✓</span> Reduce printing costs</li>
+                            </ul>
+                        </div>
+                        <div class="lg:w-[45%] w-full bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100 shadow-inner">
+                            <img src="point-of-sale-software.webp" alt="Invoice Sharing" class="w-full h-auto rounded-xl shadow-sm border border-gray-200 bg-white">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">How it works:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">After generating an invoice, click share, select WhatsApp or SMS, and the digital invoice is sent instantly.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Key Benefits:</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> 85% Faster bill delivery</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Better customer convenience</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-[#ED1A3B]"></span> Digital record keeping</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
+                            <h4 class="text-sm font-bold text-gray-900 mb-3">Mini use case:</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">An electronics store reduced paper costs by 50% by shifting to digital invoice sharing via WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Naya "Hardware Integrations" Section (Vyapar-Style) -->
         <section class="mt-32 max-w-7xl mx-auto text-left relative z-10 px-4">
             
             <!-- Heading -->
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter">Key Features</h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    A powerful system does much more than billing. It is highly user-friendly and becomes your business assistant.
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                    Hardware Integrations for <span class="text-[#ED1A3B]">SadaPOS</span> Software
+                </h2>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                    SadaPOS works smoothly with your existing hardware.<br class="hidden sm:block" />
+                    Plug & Play Setup • No Technical Expertise Required.
                 </p>
             </div>
 
-            <!-- Badi Image (Screenshot) -->
-            <div class="relative max-w-5xl mx-auto mb-20">
-                <img src="point-of-sale-software-reports.jpg" alt="Point of Sale Software Reports Dashboard" class="rounded-xl w-full h-auto">
-            </div>
-
-            <!-- 3 Columns Features Grid -->
-            <div class="max-w-6xl mx-auto">
-                <dl class="grid grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-3">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
+                
+                <!-- Left Column: Hardware List with Timeline (Scrollable) -->
+                <div class="lg:w-1/2 w-full lg:pr-6">
                     
-                    <!-- Feature 1 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
-                            </div>
-                            <a href="/offline-pos-software-start-with-free-plan" class="hover:text-[#3ecf8e] transition-colors">Offline-First &rarr;</a>
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Keeps running 24/7 without internet. Auto-syncs securely.</dd>
-                    </div>
+                    <!-- Scrollable Container with Custom Scrollbar -->
+                    <div class="relative pl-2 pr-4 max-h-[420px] overflow-y-auto custom-scrollbar">
+                        
+                        <!-- Custom Scrollbar Styling -->
+                        <style>
+                            .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+                            .custom-scrollbar::-webkit-scrollbar-track { background: #f9fafb; border-radius: 10px; }
+                            .custom-scrollbar::-webkit-scrollbar-thumb { background: #fee2e2; border-radius: 10px; }
+                            .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #fca5a5; }
+                        </style>
 
-                    <!-- Feature 2 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                            </div>
-                            Smart Inventory
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Track stock levels in real-time with product variations.</dd>
-                    </div>
+                        <!-- Vertical Connecting Line (Inside scrollable content) -->
+                        <div class="absolute left-[31px] top-6 bottom-6 w-[2px] bg-red-100 hidden sm:block"></div>
 
-                    <!-- Feature 3 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <!-- Item 1: POS Machine -->
+                        <div class="flex items-start gap-6 mb-10 relative">
+                            <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center shrink-0 relative z-10 border border-orange-100 shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                             </div>
-                            Real-Time Analytics
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Understand best-selling items and track daily profits.</dd>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">POS Machine</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Connect any standard Point of Sale machine or desktop to SadaPOS and run a complete billing counter. Your existing hardware works instantly, no replacement needed.</p>
                             </div>
-                            Customer & Supplier
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Manage customer balances, track purchases and supplier payments.</dd>
-                    </div>
+                        </div>
 
-                    <!-- Feature 5 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <!-- Item 2: Barcode Scanner -->
+                        <div class="flex items-start gap-6 mb-10 relative">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center shrink-0 relative z-10 border border-emerald-100 shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h1v12H4V6zm3 0h2v12H7V6zm3 0h1v12h-1V6zm3 0h3v12h-3V6zm4 0h2v12h-2V6z"></path></svg>
                             </div>
-                            Multi Counter Billing
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Run multiple checkout counters with cash in hand.</dd>
-                    </div>
-
-                    <!-- Feature 6 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path></svg>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Barcode Scanner</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Scan any product barcode to auto-fill item details, price, and tax at the counter. Supports USB and Bluetooth scanners, eliminating manual entry errors completely.</p>
                             </div>
-                            Staff Management
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Track employee attendance, shifts, and sales performance.</dd>
-                    </div>
+                        </div>
 
-                </dl>
+                        <!-- Item 3: Thermal Printers -->
+                        <div class="flex items-start gap-6 mb-10 relative">
+                            <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-500 flex items-center justify-center shrink-0 relative z-10 border border-purple-100 shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Thermal Printers</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Print professional receipts and invoices in seconds. Supports standard 58mm and 80mm thermal paper sizes via Bluetooth, Wi-Fi, or USB cable.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Cash Drawers -->
+                        <div class="flex items-start gap-6 mb-10 relative">
+                            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 relative z-10 border border-blue-100 shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Cash Drawers</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Integrate your cash drawer directly with SadaPOS. It opens automatically on cash transactions, keeping reconciliation accurate and your counter organized.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 5: Weighing Machine -->
+                        <div class="flex items-start gap-6 relative mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-500 flex items-center justify-center shrink-0 relative z-10 border border-teal-100 shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Weighing Machine</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">For grocery, karyana, or loose-item businesses, connect a weighing machine via USB or Bluetooth. SadaPOS auto-fetches the weight directly into the billing screen.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Right Column: Hardware Image -->
+                <div class="lg:w-1/2 w-full flex justify-center lg:justify-end mt-8 lg:mt-0">
+                    <div class="bg-white border border-gray-200 rounded-3xl p-3 shadow-xl w-full max-w-lg">
+                        <!-- Yahan hum dummy image istemal kar rahe hain -->
+                        <img src="point-of-sale-system.jpg" alt="Hardware Integrations with SadaPOS" class="rounded-2xl w-full h-auto">
+                    </div>
+                </div>
+
             </div>
+        </section>
+
+        <!-- Naya "How SadaPOS Works" Section (Vyapar-Style) -->
+        <section class="mt-32 max-w-7xl mx-auto text-center relative z-10 px-4 pb-20">
+            
+            <!-- Tiny Pill Badge -->
+            <div class="inline-flex items-center justify-center gap-2 mb-4">
+                <span class="bg-orange-50 border border-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    Setup Your Light ERP in Minutes
+                </span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                How <span class="text-[#ED1A3B]">SadaPOS</span> Works
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-12">
+                Watch how SadaPOS helps businesses manage sales, accounting, warranties, and streamline daily retail operations with ease.
+            </p>
+
+            <!-- Video Thumbnail Area -->
+            <div class="relative max-w-4xl mx-auto mb-16 cursor-pointer group">
+                <!-- Decorative background shadow -->
+                <div class="absolute -inset-4 bg-gradient-to-tr from-[#ED1A3B]/20 to-orange-400/20 rounded-[2rem] blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
+                
+                <div class="relative bg-white border border-gray-200 rounded-2xl p-2 shadow-lg overflow-hidden">
+                    <img src="point-of-sale-software.webp" alt="How SadaPOS Works Video" class="rounded-xl w-full h-auto object-cover">
+                    <!-- Play Button Overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-colors rounded-xl">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-[#ED1A3B] text-white rounded-full flex items-center justify-center shadow-lg shadow-red-500/40 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto mb-12">
+                
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-[#ED1A3B] text-white flex items-center justify-center font-bold text-lg mb-4 shadow-md shadow-red-500/30">1</div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Create Account</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Sign up for SadaPOS on your device and set up your POS billing system in minutes.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-[#ED1A3B] text-white flex items-center justify-center font-bold text-lg mb-4 shadow-md shadow-red-500/30">2</div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Add Products & Inventory</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Add your products with pricing, categories, and stock details to manage inventory efficiently.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-[#ED1A3B] text-white flex items-center justify-center font-bold text-lg mb-4 shadow-md shadow-red-500/30">3</div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Generate POS Bills</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Create fast and accurate POS invoices with tax support and multiple payment options.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-[#ED1A3B] text-white flex items-center justify-center font-bold text-lg mb-4 shadow-md shadow-red-500/30">4</div>
+                    <h3 class="text-base font-bold text-gray-900 mb-2">Track Sales & Reports</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Monitor daily sales, profit, and business performance with real-time reports.</p>
+                </div>
+
+            </div>
+
+            <!-- Small Info Pill -->
+            <div class="inline-flex items-center justify-center gap-2 bg-gray-50 border border-gray-200 text-gray-600 px-4 py-2 rounded-md text-xs font-semibold shadow-sm">
+                <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                No technical skills required — built for business owners!
+            </div>
+
         </section>
         <!-- Naya "Key Features" Section khatam -->
 
-        <!-- Naya "Industries" Section shuru -->
-        <section class="mt-32 max-w-7xl mx-auto text-left relative z-10 px-4 pb-20">
-            
-            <!-- Heading & Text (Dono purane sections ka text yahan mehfooz hai) -->
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter">Why choose SadaPOS?</h2>
-                <p class="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed mb-4">
-                    SadaPOS is designed to be an all-in-one solution for various retail businesses.
-                </p>
-                <p class="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-                    The Sada POS software helps business owners to stay relaxed from day-to-day business activities as the system manages and automates all tasks wisely. This way business owners can spend more time in business development rather than engaging themselves in business operations, which can lead to increased growth opportunities and improved strategic planning for their companies.
-                </p>
-            </div>
+        <!-- Naya "Pricing" Section (Vyapar-Style) -->
+        <section class="mt-32 max-w-7xl mx-auto text-center relative z-10 px-4 pb-10">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                Flexible Pricing for Every Stage of Your Business
+            </h2>
+            <p class="text-gray-500 text-lg mx-auto mb-16 leading-relaxed max-w-2xl">
+                We offer plans that match your needs. Start for free and upgrade only when your business grows. No hidden fees.
+            </p>
 
-            <!-- Badi Image (Doosri Image) -->
-            <div class="relative max-w-5xl mx-auto mb-20">
-                <img src="point-of-sale-system.jpg" alt="Business owner relaxing with SadaPOS system" class="rounded-xl w-full h-auto">
-            </div>
-
-            <!-- 3 Columns Industries Grid -->
-            <div class="max-w-6xl mx-auto">
-                <dl class="grid grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- 1. Growth Plan -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 text-left hover:shadow-lg transition-shadow relative flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Growth Plan</h3>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-3xl font-extrabold text-[#ED1A3B]">PKR 1199</span>
+                        <span class="text-gray-500 text-sm font-medium">/month</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6 pb-6 border-b border-gray-100 min-h-[4rem]">Perfect for growing shops. More items, more staff, more sales.</p>
                     
-                    <!-- Industry 1 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                            </div>
-                            <a href="/pos-for-mobile-business" class="hover:text-[#3ecf8e] transition-colors">Mobile Shops &rarr;</a>
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Best POS for mobile, accessories, and IMEI tracking.</dd>
-                    </div>
+                    <ul class="space-y-3.5 mb-8 flex-1">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 2.5k Active stock items</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 100 Product models</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 300 Customer accounts</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 1 Staff seat</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Reports & analytics</li>
+                    </ul>
+                </div>
 
-                    <!-- Industry 2 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-                            </div>
-                            Retail Stores
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Complete inventory and sales management for retail.</dd>
+                <!-- 2. Pro Plan (Most Popular) -->
+                <div class="bg-red-50/30 border-2 border-[#ED1A3B] rounded-2xl p-8 text-left shadow-xl relative transform md:-translate-y-4 flex flex-col">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#ED1A3B] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-md whitespace-nowrap">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+                        Most Popular
                     </div>
-
-                    <!-- Industry 3 (Updated) -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <!-- Box / Package Icon -->
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                            </div>
-                            Wholesale & Distribution
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Manage bulk quantities, batches, and serial-based inventory efficiently.</dd>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1 mt-2">Pro Plan</h3>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-3xl font-extrabold text-[#ED1A3B]">PKR 2399</span>
+                        <span class="text-gray-500 text-sm font-medium">/month</span>
                     </div>
+                    <p class="text-xs text-gray-500 mb-6 pb-6 border-b border-red-100 min-h-[4rem]">Advanced tools for growing businesses requiring more staff and support.</p>
+                    
+                    <ul class="space-y-3.5 mb-8 flex-1">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> Everything in Growth plan</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 15k Active stock items</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 1,000 Customer accounts</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 4 Staff seats</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Warranty system</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Custom reports & priority support</li>
+                    </ul>
+                </div>
 
-                    <!-- Industry 4 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                            </div>
-                            Grocery & Marts
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Fast barcode scanning and stock alerts for groceries.</dd>
+                <!-- 3. Scale Plan -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 text-left hover:shadow-lg transition-shadow relative flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Scale Plan</h3>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-3xl font-extrabold text-[#ED1A3B]">PKR 4599</span>
+                        <span class="text-gray-500 text-sm font-medium">/month</span>
                     </div>
+                    <p class="text-xs text-gray-500 mb-6 pb-6 border-b border-gray-100 min-h-[4rem]">Unrestricted resources for large-scale operations requiring maximum capacity.</p>
+                    
+                    <ul class="space-y-3.5 mb-8 flex-1">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> Everything in Pro plan</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Unlimited stock & models</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Unlimited Customers</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Up to 10 Staff seats</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Free setup</li>
+                    </ul>
+                </div>
 
-                    <!-- Industry 5 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-                            </div>
-                            Pharmacy & Medical
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Manage medicines, batches, and expiry dates easily.</dd>
-                    </div>
-
-                    <!-- Industry 6 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                            </div>
-                            Electronics Store
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Track serial numbers, warranties, and repairs.</dd>
-                    </div>
-
-                </dl>
+            </div>
+            
+            <!-- Link to full pricing page -->
+            <div class="mt-8 text-sm text-gray-500">
+                To see full features and yearly discounts, <a href="/pricing" class="text-[#ED1A3B] font-semibold hover:underline">please visit our detailed pricing page</a>.
             </div>
         </section>
-        <!-- Naya "Industries" Section khatam -->
 
-        <section class="mt-32 max-w-4xl mx-auto text-center relative z-10 pb-10">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter">Boost your sales.</h2>
-            <p class="text-gray-400 text-lg mx-auto mb-12 leading-relaxed">
-                Boost up your sales up to 200% with powerful sales features like one-click checkout, split-payments, multiple discounts, multi-payment types and more.
+        <!-- Naya "Why User-Friendly" Section (Vyapar-Style) -->
+        <section class="mt-32 max-w-7xl mx-auto text-center relative z-10 px-4 pb-12">
+            
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter leading-tight">
+                Why SadaPOS is the <br class="sm:hidden" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ED1A3B] to-orange-500">Most User-Friendly</span> Light ERP
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-3xl mx-auto mb-16 leading-relaxed">
+                SadaPOS is designed to make complete retail management simple for everyone — even if you have never used an ERP system before. Its clean interface, quick setup, and highly optimized features help businesses automate operations without any complicated training.
             </p>
-            <div class="bg-[#171717] border border-[#1e1e1e] rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between text-left mb-6">
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-2xl font-bold text-white mb-1">Predictable Pricing Plans</h3>
-                    <p class="text-gray-400 text-sm mb-4">Perfect for startup</p>
-                    <div class="flex items-center gap-6">
-                        <div class="flex items-center text-gray-300 text-sm">
-                            <svg class="w-4 h-4 text-[#3ecf8e] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Offline-first
-                        </div>
-                        <div class="flex items-center text-gray-300 text-sm">
-                            <svg class="w-4 h-4 text-[#3ecf8e] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            All basic features
-                        </div>
+
+            <!-- 3x2 Grid Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Card 1: Easy Setup in Minutes -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center mb-5 border border-blue-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-3">Easy Setup in Minutes</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">You can set up and start using SadaPOS billing software quickly without technical knowledge. Add products, set prices, and begin billing in just a few steps.</p>
                 </div>
-                <div class="text-center md:text-right md:border-l md:border-[#1e1e1e] md:pl-8">
-                    <div class="text-3xl font-bold text-white mb-1">Free</div>
-                    <p class="text-gray-400 text-xs mb-4">Forever</p>
-                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-6 py-2.5 rounded-md text-sm font-bold transition-all">
+
+                <!-- Card 2: Simple Interface Anyone Can Use -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-orange-500 flex items-center justify-center mb-5 border border-orange-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-3">Simple Interface Anyone Can Use</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">The POS billing software is designed with a clean and intuitive interface so shop owners and staff can operate it easily without long training sessions.</p>
+                </div>
+
+                <!-- Card 3: Works Offline Without Internet -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center mb-5 border border-emerald-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.828m2.829 2.828L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-3.536 5 5 0 011.414-3.536m0 0L5.636 5.636M3 3l18 18"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-3">Works Offline Without Internet</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">SadaPOS works smoothly even without an active internet connection, ensuring your retail billing never stops during network or connectivity issues.</p>
+                </div>
+
+                <!-- Card 4: Flexible for Different Business Types -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-purple-50 text-purple-500 flex items-center justify-center mb-5 border border-purple-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-3">Flexible for Different Business Types</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Whether you run a mobile shop, grocery store, pharmacy, or wholesale business, the POS system adapts easily to different commercial workflows.</p>
+                </div>
+
+                <!-- Card 5: Safe and Secure Data Management -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-pink-50 text-pink-500 flex items-center justify-center mb-5 border border-pink-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-3">Safe and Secure Data Management</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Your business data is protected with secure, automatic backups and encrypted storage, ensuring your sales records and financial data remain safe.</p>
+                </div>
+
+                <!-- Card 6: Continuous Product Updates & Support -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-teal-50 text-teal-500 flex items-center justify-center mb-5 border border-teal-100 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 7.89M9 11l3-3 3 3m0 0l-3 3-3-3"></path></svg>
+                    </div>
+                    <h3 class="text-base font-bold text-gray-900 mb-3">Continuous Updates & Support</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">SadaPOS regularly updates its software with optimizations and provides reliable customer support to help your daily operations run smoothly.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Naya "Who Can Use SadaPOS" Section (Vyapar-Style Grid) -->
+        <section class="mt-32 max-w-7xl mx-auto text-center relative z-10 px-4 pb-20">
+            
+            <!-- Tiny Pill Badge -->
+            <div class="inline-flex items-center justify-center gap-2 mb-4">
+                <span class="bg-orange-50 border border-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    Perfect For Your Business
+                </span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                Who Can Use <span class="text-[#ED1A3B]">SadaPOS</span> Light ERP?
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-16 leading-relaxed">
+                From small shops to growing enterprises, our retail management system adapts to different industries and workflows seamlessly.
+            </p>
+
+            <!-- Cards Grid (4 columns on large screens, 2 on tablet, 1 on mobile) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Card 1: Mobile Store -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Mobile Store</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Bill accessories and track unique IMEI-based inventory efficiently.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Mobile Shop</span>
+                </div>
+
+                <!-- Card 2: Grocery Store -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Grocery Store</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Fast barcode billing with real-time stock alerts and multi-counter sync.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Grocery Store</span>
+                </div>
+
+                <!-- Card 3: Pharmacy -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Pharmacy</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Bill medicines, track batches, and get automatic expiry alerts.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Pharmacy</span>
+                </div>
+
+                <!-- Card 4: Electronics Store -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Electronics Store</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Track serial numbers, manage customer warranties, and handle repairs.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Electronics</span>
+                </div>
+
+                <!-- Card 5: Wholesale & Distribution -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Wholesale</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Manage bulk quantities, custom B2B pricing, and party-wise ledgers.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Wholesale</span>
+                </div>
+
+                <!-- Card 6: Garments & Clothing -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Clothing Store</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Size and color variants with fast seasonal billing and barcode generation.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Clothing</span>
+                </div>
+
+                <!-- Card 7: Hardware & Paint -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Hardware Shop</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Track loose items, manage bulk inventory, and supplier accounts easily.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Hardware</span>
+                </div>
+
+                <!-- Card 8: Footwear Store -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:border-[#ED1A3B]/50 hover:shadow-lg transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 text-gray-500 group-hover:text-[#ED1A3B] group-hover:bg-red-50 transition-colors border border-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Footwear Store</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-6 flex-grow">Size-wise stock tracking, fast barcode generation, and easy returns.</p>
+                    <span class="text-[10px] uppercase font-bold text-[#ED1A3B] mt-auto tracking-wider">Light ERP for Footwear</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Naya "FAQs" Section (Vyapar-Style Light-Mode) -->
+        <section class="mt-32 max-w-4xl mx-auto text-center relative z-10 pb-20">
+            
+            <!-- Tiny Pill Badge -->
+            <div class="inline-flex items-center justify-center gap-2 mb-4">
+                <span class="bg-red-50 border border-red-100 text-[#ED1A3B] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    FAQs
+                </span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tighter">
+                FAQs on Light ERP & Retail Software
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-16">
+                Got questions? We've got answers. If you can't find what you're looking for, our support team is always happy to help.
+            </p>
+
+            <!-- Accordion List -->
+            <div class="text-left space-y-4 max-w-3xl mx-auto">
+                
+                <!-- FAQ 1 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">What is SadaPOS Retail Software?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        SadaPOS is an optimized, offline-first Light ERP and Retail Management System. It combines fast invoicing, real-time inventory tracking, customer ledgers, and advanced business reports into one easy-to-use platform.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Does it work offline without internet?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Yes, absolutely! SadaPOS is built with an offline-first architecture. It keeps your business running 24/7 during internet outages. You can create invoices, track stock, and print bills offline, and the system automatically syncs everything to the cloud when your connection is restored.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Can I track unique serial and IMEI numbers?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Yes. SadaPOS is engineered specifically for mobile, electronics, and appliance stores. You can track the complete lifecycle of every device via its unique IMEI or Serial number from purchase to sale, which prevents fraud and simplifies warranties.
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Does SadaPOS support multi-counter billing?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Yes. You can run multiple billing counters in your store simultaneously. All sales, inventory changes, and invoices are synced in real-time across all devices to prevent stock mismatches.
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Is there a free plan available?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Yes, SadaPOS offers a free-forever starter plan that includes core retail management features. You can use it to manage your store and upgrade to advanced plans only when your business scales.
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">What devices work with SadaPOS?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        SadaPOS works on standard computers, laptops, and mobile devices. It is fully compatible with standard USB and Bluetooth barcode scanners, cash drawers, and 58mm/80mm thermal receipt printers.
+                    </div>
+                </details>
+
+            </div>
+
+            <!-- Still have questions link -->
+            <div class="mt-10 text-sm text-gray-500">
+                Still have questions? <a href="/contact-us" class="text-[#ED1A3B] font-semibold hover:underline">Contact our support team &rarr;</a>
+            </div>
+
+        </section>
+
+        <!-- Naya "Final CTA" Section (Vyapar-Style Crimson Box) -->
+        <section id="final-cta-section" class="mt-20 max-w-6xl mx-auto text-center relative z-10 px-4 mb-24">
+            <div class="bg-[#ED1A3B] rounded-3xl py-16 px-6 md:px-12 text-white relative overflow-hidden shadow-xl shadow-red-500/10">
+                
+                <!-- Background subtle decorative light gradient -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none"></div>
+
+                <!-- Main Heading -->
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tighter leading-tight relative z-10">
+                    Start Managing Your Business Smarter Today
+                </h2>
+
+                <!-- Subheading -->
+                <p class="text-red-100 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed relative z-10">
+                    Join thousands of retail businesses who trust SadaPOS Light ERP for their store management. Get started in minutes, not days.
+                </p>
+
+                <!-- Buttons Container (Pill Shaped Buttons) -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 relative z-10">
+                    
+                    <!-- Solid White Button -->
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full sm:w-auto bg-white text-[#ED1A3B] hover:bg-red-50 px-8 py-3.5 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-black/5">
                         Start Now for Free
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
+
+                    <!-- Outline White Button -->
+                    <a href="/contact-us" class="w-full sm:w-auto border-2 border-white/80 hover:bg-white/10 text-white px-8 py-3 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2">
+                        Contact Sales
                     </a>
                 </div>
-            </div>
-            <div class="border border-[#1e1e1e] bg-[#171717]/50 rounded-xl p-4 flex items-center justify-center md:justify-start gap-3 text-sm text-gray-400">
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <span>To see full features and details <a href="/pricing" class="text-[#3ecf8e] underline hover:text-white transition-colors underline-offset-4">please visit our pricing page</a></span>
-            </div>
-        </section>
 
-        <section class="mt-20 max-w-5xl mx-auto text-center relative z-10 pb-24">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tighter">Our Impact in Numbers</h2>
-            <p class="text-gray-400 text-lg mb-12">Trusted by retailers for precision and reliability.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border border-[#1e1e1e] bg-[#171717] rounded-xl p-8 hover:border-[#3ecf8e]/30 transition-all">
-                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-[#3ecf8e]">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-bold text-white mb-2">50,000+</h3>
-                    <p class="text-gray-400 text-sm">IMEIs Tracked Globally</p>
+                <!-- Bottom Features List -->
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-red-100/90 font-medium relative z-10">
+                    <span class="flex items-center gap-1.5">🛡 100% Safe & Secure</span>
+                    <span class="flex items-center gap-1.5">⚡ Offline-First Sync</span>
+                    <span class="flex items-center gap-1.5">💳 No Credit Card Required</span>
                 </div>
-                <div class="border border-[#1e1e1e] bg-[#171717] rounded-xl p-8 hover:border-[#3ecf8e]/30 transition-all">
-                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-[#3ecf8e]">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-bold text-white mb-2">99.9%</h3>
-                    <p class="text-gray-400 text-sm">Uptime & Sync Accuracy</p>
-                </div>
-                <div class="border border-[#1e1e1e] bg-[#171717] rounded-xl p-8 hover:border-[#3ecf8e]/30 transition-all">
-                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-[#3ecf8e]">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-bold text-white mb-2">24/7</h3>
-                    <p class="text-gray-400 text-sm">Cloud Backup & Support</p>
-                </div>
+
             </div>
         </section>
 
-        <section class="mt-20 max-w-3xl mx-auto text-center relative z-10 pb-20">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">Common Questions</h2>
-            <p class="text-gray-400 text-lg mb-12">Frequently asked questions about sada point of sale software.</p>
-            <div class="text-left space-y-4">
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Can I track unique /Serial/IMEI numbers?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
-                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                        </span>
-                    </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
-                        Yes. SadaPOS is engineered specifically for mobile retailers. You can track the complete lifecycle of every device via its unique IMEI or Serial number.
-                    </div>
-                </details>
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Does it work offline without internet?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
-                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                        </span>
-                    </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
-                        Absolutely! SadaPOS is an offline-first system. It keeps your business running 24/7 without internet and automatically syncs your data securely to the cloud when you are back online.
-                    </div>
-                </details>
-            </div>
-        </section>
-
-        <section class="mt-10 max-w-4xl mx-auto text-center relative z-10 pb-32">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-                Upgrade to the <br class="hidden md:block" /> professional Point of <br class="hidden md:block" /> Sale system.
-            </h2>
-            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-                Stop guessing and start scaling. Join thousands of retailers who trust SadaPOS for their daily operations. Have questions? <a href="/contact-us" class="text-[#3ecf8e] hover:underline">Contact us</a> or read <a href="/about-us" class="text-[#3ecf8e] hover:underline">about our story</a>. You can also review our <a href="/privacy-policy" class="text-[#3ecf8e] hover:underline">Privacy Policy</a>, <a href="/terms-of-service" class="text-[#3ecf8e] hover:underline">Terms of Service</a>, and <a href="/refunds-policy" class="text-[#3ecf8e] hover:underline">Refunds Policy</a>.
-            </p>
-            <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
-                Start Now for Free
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-            </a>
-        </section>
-
-        <section class="mt-10 max-w-5xl mx-auto text-left relative z-10 pb-20 border-t border-gray-800 pt-16">
+        <!-- Naya "Recent Posts" Section (Light-Mode) - Adjusted spacing for standard visual balance -->
+        <section class="mt-12 max-w-5xl mx-auto text-left relative z-10 pb-8 border-t border-gray-200 pt-10">
             <div class="flex items-center justify-between mb-10">
-                <h2 class="text-2xl md:text-3xl font-bold text-white">Recent Posts</h2>
-                <a href="#" class="text-emerald-400 hover:text-emerald-300 text-sm font-medium transition-colors">View all posts &rarr;</a>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">Recent Posts</h2>
+                <a href="#" class="text-[#ED1A3B] hover:text-[#ED1A3B]/80 text-sm font-semibold transition-colors">View all posts &rarr;</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="#" class="group block border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden hover:border-[#3ecf8e]/30 transition-all">
+                <!-- Post 1 -->
+                <a href="#" class="group block border border-gray-200 bg-white rounded-xl overflow-hidden hover:border-[#ED1A3B]/30 hover:shadow-md transition-all shadow-sm">
                     <div class="p-6">
-                        <div class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">Resources</div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">How to manage your mobile shop inventory efficiently</h3>
-                        <p class="text-gray-400 text-sm line-clamp-3">Learn the best practices for tracking IMEIs, managing stock levels, and reducing losses in your retail business using modern POS systems.</p>
+                        <div class="text-[#ED1A3B] bg-[#ED1A3B]/10 px-2.5 py-1 rounded text-xs font-bold inline-block mb-3 uppercase tracking-wider">Resources</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#ED1A3B] transition-colors">How to manage your mobile shop inventory efficiently</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">Learn the best practices for tracking IMEIs, managing stock levels, and reducing losses in your retail business using modern POS systems.</p>
                     </div>
                 </a>
-                <a href="#" class="group block border border-gray-800 bg-gray-900/40 rounded-2xl overflow-hidden hover:border-gray-700 transition-colors">
+                <!-- Post 2 -->
+                <a href="#" class="group block border border-gray-200 bg-white rounded-xl overflow-hidden hover:border-[#ED1A3B]/30 hover:shadow-md transition-all shadow-sm">
                     <div class="p-6">
-                        <div class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">Updates</div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">SadaPOS Version 1.9 is here with new features</h3>
-                        <p class="text-gray-400 text-sm line-clamp-3">We are excited to announce the latest version of our software, bringing faster syncing, new reporting tools, and a better user interface.</p>
+                        <div class="text-[#ED1A3B] bg-[#ED1A3B]/10 px-2.5 py-1 rounded text-xs font-bold inline-block mb-3 uppercase tracking-wider">Updates</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#ED1A3B] transition-colors">SadaPOS Version 1.9 is here with new features</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">We are excited to announce the latest version of our software, bringing faster syncing, new reporting tools, and a better user interface.</p>
                     </div>
                 </a>
             </div>
         </section>
     </main>
 
-    <!-- Yahan Javascript khud Footer lagayegi -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer Section (SadaPOS Light ERP - Static HTML for 100% SEO Indexation) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-20 pb-10 relative z-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16 text-center">
+            
+            <!-- Social Media Icons -->
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://www.facebook.com/sadapos" aria-label="Facebook" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@sadapos" aria-label="YouTube" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/sadaposofficial/" aria-label="Instagram" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
 
-    <!-- Header aur Footer ki Javascript files -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+                The all-in-one POS system. Precision inventory, automated financials, and global sync technology designed for all type of retailers and wholesale businesses of all sizes.
+            </p>
+
+            <!-- Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-12 text-sm">
+                <a href="/privacy-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Privacy Policy</a>
+                <a href="/terms-of-service" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Terms of Service</a>
+                <a href="/refunds-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Refunds Policy</a>
+                <a href="/contact-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Contact Us</a>
+                <a href="/pricing" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Pricing</a>
+                <a href="/about-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">About Us</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-500 text-xs border-t border-gray-200 pt-8">
+                &copy; 2025 - 2026 SadaPOS. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom CTA Button (Vyapar-Style - Ultra Sleek & Compact Size) -->
+    <div id="sticky-bottom-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-3rem)] max-w-[290px] opacity-0 pointer-events-none translate-y-10 transition-all duration-500 ease-out">
+        
+        <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="relative flex items-center justify-center w-full py-2.5 rounded-full bg-[#ED1A3B] hover:bg-[#D91532] shadow-[0_8px_30px_rgba(237,26,59,0.35)] transition-colors group overflow-hidden">
+            
+            <!-- Inner Light Track (Pushed 2px inside from the outer edge) -->
+            <div class="absolute inset-[2px] rounded-full overflow-hidden pointer-events-none">
+                <span class="absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,#FFD700_0%,transparent_25%,#FFD700_50%,transparent_75%,#FFD700_100%)] opacity-80 group-hover:opacity-100 transition-opacity"></span>
+                <!-- Inner Solid Core (Pushed 3px inside from the light track, making the light 3px thick) -->
+                <span class="absolute inset-[3px] rounded-full bg-[#ED1A3B] group-hover:bg-[#D91532] transition-colors"></span>
+            </div>
+            
+            <!-- Text and Icon (z-10 to stay above the light track) -->
+            <span class="relative z-10 flex items-center justify-center gap-1.5 text-white text-xs md:text-sm font-bold tracking-tight">
+                Start Now for Free
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </span>
+        </a>
+    </div>
+
+    <!-- Interactive Tabs Logic Script (Dono Sections ke liye) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            // Logic for First Tab Section
+            const tabButtons1 = document.querySelectorAll('.tab-btn');
+            const tabPanels1 = document.querySelectorAll('.tab-panel');
+
+            tabButtons1.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons1.forEach(btn => {
+                        btn.classList.remove('active', 'bg-[#ED1A3B]', 'text-white', 'border-[#ED1A3B]', 'shadow-md', 'shadow-red-500/20');
+                        btn.classList.add('inactive', 'bg-white', 'text-gray-600', 'border-gray-200');
+                    });
+                    button.classList.remove('inactive', 'bg-white', 'text-gray-600', 'border-gray-200');
+                    button.classList.add('active', 'bg-[#ED1A3B]', 'text-white', 'border-[#ED1A3B]', 'shadow-md', 'shadow-red-500/20');
+
+                    tabPanels1.forEach(panel => { panel.classList.add('hidden'); panel.classList.remove('flex'); });
+                    const targetPanel = document.getElementById(button.getAttribute('data-target'));
+                    if (targetPanel) { targetPanel.classList.remove('hidden'); targetPanel.classList.add('flex'); }
+                });
+            });
+
+            // Logic for Second (Advanced) Tab Section
+            const tabButtons2 = document.querySelectorAll('.adv-tab-btn');
+            const tabPanels2 = document.querySelectorAll('.adv-tab-panel');
+
+            tabButtons2.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons2.forEach(btn => {
+                        btn.classList.remove('active', 'bg-[#ED1A3B]', 'text-white', 'border-[#ED1A3B]', 'shadow-md', 'shadow-red-500/20');
+                        btn.classList.add('inactive', 'bg-white', 'text-gray-600', 'border-gray-200');
+                    });
+                    button.classList.remove('inactive', 'bg-white', 'text-gray-600', 'border-gray-200');
+                    button.classList.add('active', 'bg-[#ED1A3B]', 'text-white', 'border-[#ED1A3B]', 'shadow-md', 'shadow-red-500/20');
+
+                    tabPanels2.forEach(panel => { panel.classList.add('hidden'); panel.classList.remove('flex'); });
+                    const targetPanel = document.getElementById(button.getAttribute('data-target'));
+                    if (targetPanel) { targetPanel.classList.remove('hidden'); targetPanel.classList.add('flex'); }
+                });
+            });
+
+        });
+    </script>
+
+    <!-- Sticky Button Reveal & Smart Bottom Auto-Hide script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stickyCta = document.getElementById("sticky-bottom-cta");
+            const finalSection = document.getElementById("final-cta-section");
+            let isFinalSectionVisible = false;
+
+            if (stickyCta) {
+                // Intersection Observer to detect if we reached the final red CTA section
+                if (finalSection) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry) => {
+                            isFinalSectionVisible = entry.isIntersecting;
+                            updateStickyVisibility();
+                        });
+                    }, { threshold: 0.05 }); // Triggers when 5% of the final section is visible
+                    observer.observe(finalSection);
+                }
+
+                // Scroll event listener
+                window.addEventListener("scroll", updateStickyVisibility);
+
+                function updateStickyVisibility() {
+                    // Show sticky CTA only if we scrolled past 400px AND the final section is NOT visible
+                    if (window.scrollY > 400 && !isFinalSectionVisible) {
+                        stickyCta.classList.remove("opacity-0", "pointer-events-none", "translate-y-10");
+                        stickyCta.classList.add("opacity-100", "pointer-events-auto", "translate-y-0");
+                    } else {
+                        stickyCta.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+                        stickyCta.classList.add("opacity-0", "pointer-events-none", "translate-y-10");
+                    }
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>

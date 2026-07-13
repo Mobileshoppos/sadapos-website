@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing - SadaPOS</title>
     <meta name="description" content="Affordable pricing for our point of sale software. Choose the right offline pos software plan to grow your retail store or pos for mobile business today.">
-    <link rel="canonical" href="https://www.sadapos.com/pricing" />
+    <link class="canonical" href="https://www.sadapos.com/pricing" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -49,15 +49,8 @@
         }
     </script>
     <style>
+        html { font-size: 17px; }
         body { font-family: 'Inter', sans-serif; }
-        /* Smooth transition for toggle */
-        .toggle-checkbox:checked {
-            right: 0;
-            border-color: #3ecf8e;
-        }
-        .toggle-checkbox:checked + .toggle-label {
-            background-color: #3ecf8e;
-        }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18032729402">
@@ -84,33 +77,269 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-<body class="bg-[#121212] text-gray-400 font-sans antialiased">
+</head>
+<body class="bg-gray-50 text-gray-600 font-sans antialiased">
     
-    <!-- Yahan Javascript khud Header lagayegi -->
-    <div id="header-placeholder"></div>
+    <!-- Header Section (SadaPOS Light ERP Mega Menu) -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/">
+                        <img src="sada-pos-logo.png" alt="SadaPOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu - Vertically Aligned correctly using items-center -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Home</a>
+                    
+                    <!-- Solutions Mega Menu (Pure CSS Hover, 100% SEO Friendly & Balanced Layout) -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors focus:outline-none py-5">
+                            Solutions
+                            <svg class="w-4 h-4 text-gray-400 group-hover:text-[#ED1A3B] transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <!-- Mega Menu Dropdown Container -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0 hidden group-hover:block w-[780px] transition-all duration-300">
+                            <!-- divide-x adds vertical light divider lines between columns -->
+                            <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl grid grid-cols-3 divide-x divide-gray-100 mt-2">
+                                
+                                <!-- Col 1: Business Solutions -->
+                                <div class="pr-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Business Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">POS Billing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Inventory Tracking</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Customer Ledgers</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Col 2: Industry Solutions -->
+                                <div class="px-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Industry Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/pos-for-mobile-business" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Mobile Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Grocery Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pharmacies</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Electronics Store</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Wholesale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Clothing Store</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-    <main class="container mx-auto px-4 pt-10 md:pt-16 pb-16 md:pb-24">
+                                <!-- Col 3: Resources -->
+                                <div class="pl-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Resources</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Features</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pricing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/about-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">About Us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Contact Us</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/pricing" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Pricing</a>
+                    <a href="/contact-us" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Contact</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden md:flex">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-[#ED1A3B] hover:bg-[#D91532] text-white px-5 py-2 rounded-md text-sm font-bold transition-all shadow-md shadow-red-500/10">
+                        Go to App
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu" class="text-gray-600 hover:text-gray-950 focus:outline-none">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white shadow-inner">
+            <div class="px-6 pt-2 pb-4 space-y-1">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Home</a>
+                
+                <!-- Mobile Solutions Collapsible Accordion (Pure CSS & lightweight JS) -->
+                <div>
+                    <button id="mobile-solutions-btn" class="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors focus:outline-none">
+                        <span>Solutions</span>
+                        <svg id="mobile-solutions-arrow" class="w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Collapsible Solutions Content -->
+                    <div id="mobile-solutions-content" class="hidden pl-6 pr-3 py-2 space-y-1 bg-gray-50/50 rounded-xl mt-1 border border-gray-200/50 shadow-inner">
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-2 pb-1 pl-3">Business</div>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">POS Billing</a>
+                        <a href="/features" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Inventory Tracking</a>
+                        <a href="/pricing" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Customer Ledgers</a>
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-3 pb-1 pl-3">Industries</div>
+                        <a href="/pos-for-mobile-business" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Mobile Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Grocery Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Pharmacies</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Electronics Store</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Wholesale</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Clothing Store</a>
+                    </div>
+                </div>
+
+                <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Pricing</a>
+                <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Contact</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="block mt-4 text-center bg-[#ED1A3B] text-white px-4 py-2 rounded-md text-base font-bold">Go to App</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Script directly embedded to handle menu & accordion -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+
+            // Mobile Solutions Accordion Toggle Logic
+            const solutionsBtn = document.getElementById('mobile-solutions-btn');
+            const solutionsContent = document.getElementById('mobile-solutions-content');
+            const solutionsArrow = document.getElementById('mobile-solutions-arrow');
+            if (solutionsBtn && solutionsContent && solutionsArrow) {
+                solutionsBtn.addEventListener('click', () => {
+                    solutionsContent.classList.toggle('hidden');
+                    solutionsArrow.classList.toggle('rotate-180');
+                });
+            }
+        });
+    </script>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-16 pt-12 md:pt-16 pb-16 md:pb-24">
         
         <!-- Pricing Header & Toggle -->
         <div class="max-w-3xl mx-auto text-center mb-16">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tighter mb-6">Affordable, scalable pricing</h1>
-            <p class="text-gray-400 text-lg md:text-xl leading-relaxed mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tighter mb-6">Affordable, scalable pricing</h1>
+            <p class="text-gray-500 text-lg leading-relaxed mb-10">
                 Choose the plan that fits your business. Start for free and upgrade as you grow. No hidden fees, no surprises.
             </p>
 
             <!-- Monthly / Yearly Toggle -->
             <div class="flex items-center justify-center gap-4">
-                <span id="monthly-label" class="text-white font-semibold text-lg transition-colors">Monthly</span>
+                <span id="monthly-label" class="text-gray-950 font-bold text-base transition-colors">Monthly</span>
                 
                 <!-- Toggle Button -->
-                <button id="billing-toggle" class="relative inline-flex h-7 w-14 items-center rounded-full bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#3ecf8e] focus:ring-offset-2 focus:ring-offset-[#121212]" role="switch" aria-checked="false">
+                <button id="billing-toggle" class="relative inline-flex h-7 w-14 items-center rounded-full bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-[#ED1A3B] focus:ring-offset-2 focus:ring-offset-gray-50" role="switch" aria-checked="false">
                     <span class="sr-only">Toggle billing period</span>
-                    <span id="toggle-circle" class="inline-block h-5 w-5 translate-x-1 rounded-full bg-white transition-transform duration-200 ease-in-out"></span>
+                    <span id="toggle-circle" class="inline-block h-5 w-5 translate-x-1 rounded-full bg-white transition-transform duration-200 ease-in-out shadow-sm"></span>
                 </button>
                 
-                <span id="yearly-label" class="text-gray-500 font-semibold text-lg transition-colors flex items-center gap-2">
+                <span id="yearly-label" class="text-gray-400 font-semibold text-base transition-colors flex items-center gap-2">
                     Yearly 
-                    <span class="bg-[#3ecf8e]/20 text-[#3ecf8e] text-xs px-2 py-1 rounded-full font-bold uppercase tracking-wide">Save UPTO 10%</span>
+                    <span class="bg-[#ED1A3B]/10 text-[#ED1A3B] text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-wide">Save UPTO 10%</span>
                 </span>
             </div>
         </div>
@@ -119,177 +348,176 @@ function gtag_report_conversion(url) {
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             
             <!-- 1. Growth Plan -->
-            <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 flex flex-col hover:border-[#3ecf8e]/30 transition-all">
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col hover:shadow-lg transition-shadow relative">
                 <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-white mb-2">Growth</h3>
-                    <p class="text-gray-400 text-sm h-10">Perfect for growing shops. More items, more staff, more sales.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Growth Plan</h3>
+                    <p class="text-gray-500 text-xs min-h-[3rem]">Perfect for growing shops. More items, more staff, more sales.</p>
                 </div>
                 <div class="mb-8">
-                    <div class="flex items-baseline text-white">
-                        <span class="text-xl font-medium text-gray-400 mr-1">PKR</span>
-                        <span class="text-5xl font-extrabold tracking-tight price-display" data-monthly="1199" data-yearly="1079">1199</span>
-                        <span class="text-gray-500 ml-1 billing-text">/mo</span>
+                    <div class="flex items-baseline text-gray-900">
+                        <span class="text-sm font-semibold text-gray-500 mr-1">PKR</span>
+                        <span class="text-4xl font-extrabold tracking-tight price-display" data-monthly="1199" data-yearly="1079">1199</span>
+                        <span class="text-gray-500 text-xs ml-1 billing-text">/month</span>
                     </div>
-                    <p class="text-[#3ecf8e] text-sm mt-2 font-medium yearly-note hidden">Billed annually at PKR 12,950</p>
+                    <p class="text-[#ED1A3B] text-xs mt-2 font-medium yearly-note hidden">Billed annually at PKR 12,950</p>
                 </div>
-                <div class="h-6 mb-4"></div> <!-- Alignment spacer -->
-                <ul class="space-y-4 mb-8 flex-1">
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">2.5k Active stock items</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">100 Product models</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">300 Customers accounts</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">20 Supplier accounts</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">1 Staff seat</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Reports & analytics</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Counter feature (limit 1)</span></li>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> 2.5k Active stock items</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> 100 Product models</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> 300 Customers accounts</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> 20 Supplier accounts</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> 1 Staff seat</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Reports & analytics</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Counter feature (limit 1)</li>
                 </ul>
-                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full block text-center bg-[#1e1e1e] text-white hover:bg-gray-700 px-6 py-3 rounded-md text-base font-bold transition-all">Upgrade to Growth</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full block text-center border-2 border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-md text-sm font-bold transition-all">Upgrade to Growth</a>
             </div>
 
             <!-- 2. Pro Plan (Most Popular) -->
-            <div class="bg-[#171717] border-2 border-[#3ecf8e] rounded-2xl p-8 flex flex-col relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(62,207,142,0.1)]">
-                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#3ecf8e] text-[#121212] px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Most Popular</div>
+            <div class="bg-white border-2 border-[#ED1A3B] rounded-2xl p-8 flex flex-col relative transform md:-translate-y-4 shadow-xl shadow-red-500/5">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#ED1A3B] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">Most Popular</div>
                 <div class="mb-6 mt-2">
-                    <h3 class="text-2xl font-bold text-white mb-2">Pro</h3>
-                    <p class="text-gray-400 text-sm h-10">Advanced tools for growing businesses that require more staff and dedicated support.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Pro Plan</h3>
+                    <p class="text-gray-500 text-xs min-h-[3rem]">Advanced tools for growing businesses that require more staff and dedicated support.</p>
                 </div>
                 <div class="mb-8">
-                    <div class="flex items-baseline text-white">
-                        <span class="text-xl font-medium text-gray-400 mr-1">PKR</span>
-                        <span class="text-5xl font-extrabold tracking-tight price-display" data-monthly="2399" data-yearly="2159">2399</span>
-                        <span class="text-gray-500 ml-1 billing-text">/mo</span>
+                    <div class="flex items-baseline text-gray-900">
+                        <span class="text-sm font-semibold text-gray-500 mr-1">PKR</span>
+                        <span class="text-4xl font-extrabold tracking-tight price-display text-[#ED1A3B]" data-monthly="2399" data-yearly="2159">2399</span>
+                        <span class="text-gray-500 text-xs ml-1 billing-text">/month</span>
                     </div>
-                    <p class="text-[#3ecf8e] text-sm mt-2 font-medium yearly-note hidden">Billed annually at PKR 25,909</p>
+                    <p class="text-[#ED1A3B] text-xs mt-2 font-medium yearly-note hidden">Billed annually at PKR 25,909</p>
                 </div>
-                <p class="text-base font-bold text-white mb-4">Everything in Growth, Plus:</p>
-                <ul class="space-y-4 mb-8 flex-1">
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-white font-medium text-sm">15k Active stock items</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-white font-medium text-sm">300 Product models</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-white font-medium text-sm">1,000 Customers accounts</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-white font-medium text-sm">100 Suppliers accounts</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-white font-medium text-sm">4 Staff seats</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Priority support & Custom reports</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Warranty system</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Counter limit 3</span></li>
+                <p class="text-xs font-bold text-gray-800 mb-4">Everything in Growth, Plus:</p>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> 15k Active stock items</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> 300 Product models</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> 1,000 Customers accounts</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> 100 Suppliers accounts</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> 4 Staff seats</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Priority support & Custom reports</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Warranty system</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Counter limit 3</li>
                 </ul>
-                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full block text-center bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-6 py-3 rounded-md text-base font-bold transition-all shadow-[0_0_15px_rgba(62,207,142,0.2)]">Get Pro Power</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full block text-center bg-[#ED1A3B] text-white hover:bg-[#D91532] px-6 py-3 rounded-md text-sm font-bold transition-all shadow-md shadow-red-500/10">Get Pro Power</a>
             </div>
 
             <!-- 3. Scale Plan -->
-            <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 flex flex-col hover:border-[#3ecf8e]/30 transition-all">
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col hover:shadow-lg transition-shadow relative">
                 <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-white mb-2">Scale</h3>
-                    <p class="text-gray-400 text-sm h-10">Unrestricted resources for large-scale operations requiring maximum capacity and speed.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Scale Plan</h3>
+                    <p class="text-gray-500 text-xs min-h-[3rem]">Unrestricted resources for large-scale operations requiring maximum capacity and speed.</p>
                 </div>
                 <div class="mb-8">
-                    <div class="flex items-baseline text-white">
-                        <span class="text-xl font-medium text-gray-400 mr-1">PKR</span>
-                        <span class="text-5xl font-extrabold tracking-tight price-display" data-monthly="4599" data-yearly="4139">4599</span>
-                        <span class="text-gray-500 ml-1 billing-text">/mo</span>
+                    <div class="flex items-baseline text-gray-900">
+                        <span class="text-sm font-semibold text-gray-500 mr-1">PKR</span>
+                        <span class="text-4xl font-extrabold tracking-tight price-display" data-monthly="4599" data-yearly="4139">4599</span>
+                        <span class="text-gray-500 text-xs ml-1 billing-text">/month</span>
                     </div>
-                    <p class="text-[#3ecf8e] text-sm mt-2 font-medium yearly-note hidden">Billed annually at PKR 49,669</p>
+                    <p class="text-[#ED1A3B] text-xs mt-2 font-medium yearly-note hidden">Billed annually at PKR 49,669</p>
                 </div>
-                <p class="text-base font-bold text-white mb-4">Everything in Pro, Plus:</p>
-                <ul class="space-y-4 mb-8 flex-1">
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Unlimited stock & models</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Unlimited Customers & Suppliers</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Up to 10 Staff seats</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Priority support & free setup</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Unlimited everything</span></li>
-                    <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[#3ecf8e] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-300 text-sm">Counter limit up to 10</span></li>
+                <p class="text-xs font-bold text-gray-800 mb-4">Everything in Pro, Plus:</p>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Unlimited stock & models</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Unlimited Customers & Suppliers</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Up to 10 Staff seats</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Priority support & free setup</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Unlimited everything</li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-600"><span class="text-emerald-500 font-bold">✓</span> Counter limit up to 10</li>
                 </ul>
-                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full block text-center bg-[#1e1e1e] text-white hover:bg-gray-700 px-6 py-3 rounded-md text-base font-bold transition-all border border-gray-600">Get Scale Power</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full block text-center border-2 border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-md text-sm font-bold transition-all">Get Scale Power</a>
             </div>
         </div>
 
         <!-- Free Plan Banner -->
-        <div class="max-w-4xl mx-auto bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 mb-32 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="max-w-6xl mx-auto bg-white border border-gray-200 shadow-sm rounded-2xl p-8 mb-24 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex-1">
-                <h3 class="text-2xl font-bold text-white mb-2">Free</h3>
-                <p class="text-gray-400">Perfect for starting out with all basic features.</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-1">Free Plan</h3>
+                <p class="text-gray-500 text-sm">Perfect for starting out with all basic features.</p>
             </div>
-            <div class="flex items-center gap-6">
-                <span class="text-white font-bold text-xl">PKR 0/forever</span>
-                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-[#1e1e1e] text-white hover:bg-gray-700 px-8 py-3 rounded-md font-bold transition-all">Start for Free</a>
+            <div class="flex items-center gap-6 flex-wrap justify-between w-full md:w-auto">
+                <span class="text-gray-900 font-bold text-xl">PKR 0/forever</span>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-gray-100 text-gray-800 hover:bg-gray-200 px-8 py-3 rounded-md font-bold text-sm transition-all border border-gray-200">Start for Free</a>
             </div>
         </div>
 
-        <!-- Detailed Features Comparison Table (Rich Content) -->
-        <div class="max-w-5xl mx-auto mb-32 hidden md:block">
-            <h2 class="text-3xl font-extrabold text-white text-center mb-10 tracking-tighter">Compare plan features</h2>
-            <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl overflow-hidden">
+        <!-- Detailed Features Comparison Table -->
+        <div class="max-w-6xl mx-auto mb-32 hidden md:block">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-10 tracking-tighter">Compare plan features</h2>
+            <div class="bg-white border border-gray-200 shadow-sm rounded-2xl overflow-hidden">
                 <table class="w-full text-left border-collapse">
                 <thead>
-                    <tr class="border-b border-[#1e1e1e]">
-                        <th class="p-6 text-gray-300 font-semibold w-1/5">Features</th>
-                        <th class="p-6 text-white font-bold w-1/5 text-center">Free</th>
-                        <th class="p-6 text-white font-bold w-1/5 text-center">Growth</th>
-                        <th class="p-6 text-[#3ecf8e] font-bold w-1/5 text-center bg-[#3ecf8e]/5">Pro</th>
-                        <th class="p-6 text-white font-bold w-1/5 text-center">Scale</th>
+                    <tr class="bg-gray-100 border-b border-gray-200">
+                        <th class="p-6 text-gray-700 font-semibold w-1/5">Features</th>
+                        <th class="p-6 text-gray-900 font-bold w-1/5 text-center">Free</th>
+                        <th class="p-6 text-gray-900 font-bold w-1/5 text-center">Growth</th>
+                        <th class="p-6 text-[#ED1A3B] font-bold w-1/5 text-center bg-red-50/20">Pro</th>
+                        <th class="p-6 text-gray-900 font-bold w-1/5 text-center">Scale</th>
                     </tr>
                 </thead>
                 <tbody class="text-sm">
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Active stock Items</td>
-                        <td class="p-6 text-gray-300 text-center">Limited</td>
-                        <td class="p-6 text-gray-300 text-center">2,500</td>
-                        <td class="p-6 text-white font-medium text-center bg-[#3ecf8e]/5">15,000</td>
-                        <td class="p-6 text-white text-center">Unlimited</td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Active stock Items</td>
+                        <td class="p-6 text-gray-600 text-center">Limited</td>
+                        <td class="p-6 text-gray-600 text-center">2,500</td>
+                        <td class="p-6 text-gray-900 font-medium text-center bg-red-50/10">15,000</td>
+                        <td class="p-6 text-gray-900 text-center">Unlimited</td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Product models</td>
-                        <td class="p-6 text-gray-300 text-center">Limited</td>
-                        <td class="p-6 text-gray-300 text-center">100</td>
-                        <td class="p-6 text-white font-medium text-center bg-[#3ecf8e]/5">300</td>
-                        <td class="p-6 text-white text-center">Unlimited</td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Product models</td>
+                        <td class="p-6 text-gray-600 text-center">Limited</td>
+                        <td class="p-6 text-gray-600 text-center">100</td>
+                        <td class="p-6 text-gray-900 font-medium text-center bg-red-50/10">300</td>
+                        <td class="p-6 text-gray-900 text-center">Unlimited</td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Customers management</td>
-                        <td class="p-6 text-gray-300 text-center">Buil-in walk in customer</td>
-                        <td class="p-6 text-gray-300 text-center">300</td>
-                        <td class="p-6 text-white font-medium text-center bg-[#3ecf8e]/5">1000</td>
-                        <td class="p-6 text-white text-center">Unlimited</td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Customers management</td>
+                        <td class="p-6 text-gray-600 text-center">Built-in walk in customer</td>
+                        <td class="p-6 text-gray-600 text-center">300</td>
+                        <td class="p-6 text-gray-900 font-medium text-center bg-red-50/10">1000</td>
+                        <td class="p-6 text-gray-900 text-center">Unlimited</td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Supplier management</td>
-                        <td class="p-6 text-gray-300 text-center">Buil-in cash purchase</td>
-                        <td class="p-6 text-gray-300 text-center">20</td>
-                        <td class="p-6 text-white font-medium text-center bg-[#3ecf8e]/5">100</td>
-                        <td class="p-6 text-white text-center">Unlimited</td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Supplier management</td>
+                        <td class="p-6 text-gray-600 text-center">Built-in cash purchase</td>
+                        <td class="p-6 text-gray-600 text-center">20</td>
+                        <td class="p-6 text-gray-900 font-medium text-center bg-red-50/10">100</td>
+                        <td class="p-6 text-gray-900 text-center">Unlimited</td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Staff Seats</td>
-                        <td class="p-6 text-gray-300 text-center">1</td>
-                        <td class="p-6 text-gray-300 text-center">1</td>
-                        <td class="p-6 text-white font-medium text-center bg-[#3ecf8e]/5">4</td>
-                        <td class="p-6 text-white text-center">10</td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Staff Seats</td>
+                        <td class="p-6 text-gray-600 text-center">1</td>
+                        <td class="p-6 text-gray-600 text-center">1</td>
+                        <td class="p-6 text-gray-900 font-medium text-center bg-red-50/10">4</td>
+                        <td class="p-6 text-gray-900 text-center">10</td>
                     </tr>
-                    <tr class="hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Counter Limit</td>
-                        <td class="p-6 text-gray-300 text-center">Built-in</td>
-                        <td class="p-6 text-gray-300 text-center">1</td>
-                        <td class="p-6 text-white font-medium text-center bg-[#3ecf8e]/5">3</td>
-                        <td class="p-6 text-white text-center">10</td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Counter Limit</td>
+                        <td class="p-6 text-gray-600 text-center">Built-in</td>
+                        <td class="p-6 text-gray-600 text-center">1</td>
+                        <td class="p-6 text-gray-900 font-medium text-center bg-red-50/10">3</td>
+                        <td class="p-6 text-gray-900 text-center">10</td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Warranty Management</td>
-                        <td class="p-6 text-gray-600 text-center">-</td>
-                        <td class="p-6 text-gray-600 text-center">-</td>
-                        <td class="p-6 text-center bg-[#3ecf8e]/5"><svg class="w-5 h-5 text-[#3ecf8e] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        <td class="p-6 text-center"><svg class="w-5 h-5 text-[#3ecf8e] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Warranty Management</td>
+                        <td class="p-6 text-gray-400 text-center">-</td>
+                        <td class="p-6 text-gray-400 text-center">-</td>
+                        <td class="p-6 text-center bg-red-50/10"><svg class="w-5 h-5 text-[#ED1A3B] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
+                        <td class="p-6 text-center"><svg class="w-5 h-5 text-[#ED1A3B] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Advanced Settings</td>
-                        <td class="p-6 text-gray-600 text-center">-</td>
-                        <td class="p-6 text-gray-600 text-center">-</td>
-                        <td class="p-6 text-center bg-[#3ecf8e]/5"><svg class="w-5 h-5 text-[#3ecf8e] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        <td class="p-6 text-center"><svg class="w-5 h-5 text-[#3ecf8e] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Advanced Settings</td>
+                        <td class="p-6 text-gray-400 text-center">-</td>
+                        <td class="p-6 text-gray-400 text-center">-</td>
+                        <td class="p-6 text-center bg-red-50/10"><svg class="w-5 h-5 text-[#ED1A3B] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
+                        <td class="p-6 text-center"><svg class="w-5 h-5 text-[#ED1A3B] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
                     </tr>
-                    <tr class="border-b border-[#1e1e1e] hover:bg-[#1e1e1e]/50">
-                        <td class="p-6 text-gray-400">Custom Reports</td>
-                        <td class="p-6 text-gray-600 text-center">-</td>
-                        <td class="p-6 text-center text-gray-300">-</td>
-                        <td class="p-6 text-center bg-[#3ecf8e]/5"><svg class="w-5 h-5 text-[#3ecf8e] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
-                        <td class="p-6 text-center"><svg class="w-5 h-5 text-[#3ecf8e] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-6 text-gray-600">Custom Reports</td>
+                        <td class="p-6 text-gray-400 text-center">-</td>
+                        <td class="p-6 text-gray-400 text-center">-</td>
+                        <td class="p-6 text-center bg-red-50/10"><svg class="w-5 h-5 text-[#ED1A3B] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
+                        <td class="p-6 text-center"><svg class="w-5 h-5 text-[#ED1A3B] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></td>
                     </tr>
                 </tbody>
             </table>
@@ -298,30 +526,30 @@ function gtag_report_conversion(url) {
 
         <!-- Pricing FAQs -->
         <section class="max-w-3xl mx-auto text-center relative z-10 pb-20">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tighter">Pricing FAQs</h2>
-            <p class="text-gray-400 text-lg mb-12">Everything you need to know about our billing and subscription plans.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tighter">Pricing FAQs</h2>
+            <p class="text-gray-500 text-base mb-12">Everything you need to know about our billing and subscription plans.</p>
 
             <div class="text-left space-y-4">
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Can I switch plans later?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-6 text-gray-800 hover:text-[#ED1A3B] transition-colors">
+                        <span class="text-base md:text-lg">Can I switch plans later?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                    <div class="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
                         Absolutely. You can upgrade or downgrade your plan at any time from your account settings. If you upgrade, the new features will be available instantly.
                     </div>
                 </details>
 
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Are there any hidden fees?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-6 text-gray-800 hover:text-[#ED1A3B] transition-colors">
+                        <span class="text-base md:text-lg">Are there any hidden fees?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                    <div class="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
                         No, we believe in 100% transparency. The price you see is the price you pay. There are no setup fees, cancellation fees, or hidden maintenance charges.
                     </div>
                 </details>
@@ -330,12 +558,47 @@ function gtag_report_conversion(url) {
 
     </main>
 
-    <!-- Yahan Javascript khud Footer lagayegi -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer Section (SadaPOS Light ERP - Static HTML for 100% SEO Indexation) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-20 pb-10 relative z-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16 text-center">
+            
+            <!-- Social Media Icons -->
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://www.facebook.com/sadapos" aria-label="Facebook" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@sadapos" aria-label="YouTube" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/sadaposofficial/" aria-label="Instagram" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
 
-    <!-- Header aur Footer ki Javascript files -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+                The all-in-one POS system. Precision inventory, automated financials, and global sync technology designed for all type of retailers and wholesale businesses of all sizes.
+            </p>
+
+            <!-- Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-12 text-sm">
+                <a href="/privacy-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Privacy Policy</a>
+                <a href="/terms-of-service" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Terms of Service</a>
+                <a href="/refunds-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Refunds Policy</a>
+                <a href="/contact-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Contact Us</a>
+                <a href="/pricing" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Pricing</a>
+                <a href="/about-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">About Us</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-500 text-xs border-t border-gray-200 pt-8">
+                &copy; 2025 - 2026 SadaPOS. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
     <!-- Monthly/Yearly Toggle Script -->
     <script>
@@ -355,12 +618,12 @@ function gtag_report_conversion(url) {
             
             if (!isYearly) {
                 // Switch to Yearly
-                toggleBtn.classList.replace('bg-gray-600', 'bg-[#3ecf8e]');
+                toggleBtn.classList.replace('bg-gray-300', 'bg-[#ED1A3B]');
                 toggleCircle.classList.add('translate-x-7');
                 toggleCircle.classList.remove('translate-x-1');
                 
-                monthlyLabel.classList.replace('text-white', 'text-gray-500');
-                yearlyLabel.classList.replace('text-gray-500', 'text-white');
+                monthlyLabel.classList.replace('text-gray-950', 'text-gray-400');
+                yearlyLabel.classList.replace('text-gray-400', 'text-gray-950');
 
                 // Update Prices and show notes
                 priceDisplays.forEach(display => {
@@ -370,12 +633,12 @@ function gtag_report_conversion(url) {
                 
             } else {
                 // Switch to Monthly
-                toggleBtn.classList.replace('bg-[#3ecf8e]', 'bg-gray-600');
+                toggleBtn.classList.replace('bg-[#ED1A3B]', 'bg-gray-300');
                 toggleCircle.classList.remove('translate-x-7');
                 toggleCircle.classList.add('translate-x-1');
                 
-                yearlyLabel.classList.replace('text-white', 'text-gray-500');
-                monthlyLabel.classList.replace('text-gray-500', 'text-white');
+                yearlyLabel.classList.replace('text-gray-950', 'text-gray-400');
+                monthlyLabel.classList.replace('text-gray-400', 'text-gray-950');
 
                 // Update Prices and hide notes
                 priceDisplays.forEach(display => {

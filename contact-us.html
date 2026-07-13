@@ -49,6 +49,7 @@
         }
     </script>
     <style>
+        html { font-size: 17px; }
         body { font-family: 'Inter', sans-serif; }
     </style>
 <!-- Google tag (gtag.js) -->
@@ -76,63 +77,299 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-<body class="bg-[#121212] text-gray-400 font-sans antialiased">
+</head>
+<body class="bg-gray-50 text-gray-600 font-sans antialiased">
     
-    <!-- Yahan Javascript khud Header lagayegi -->
-    <div id="header-placeholder"></div>
+    <!-- Header Section (SadaPOS Light ERP Mega Menu) -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/">
+                        <img src="sada-pos-logo.png" alt="SadaPOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu - Vertically Aligned correctly using items-center -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Home</a>
+                    
+                    <!-- Solutions Mega Menu (Pure CSS Hover, 100% SEO Friendly & Balanced Layout) -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors focus:outline-none py-5">
+                            Solutions
+                            <svg class="w-4 h-4 text-gray-400 group-hover:text-[#ED1A3B] transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <!-- Mega Menu Dropdown Container -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0 hidden group-hover:block w-[780px] transition-all duration-300">
+                            <!-- divide-x adds vertical light divider lines between columns -->
+                            <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl grid grid-cols-3 divide-x divide-gray-100 mt-2">
+                                
+                                <!-- Col 1: Business Solutions -->
+                                <div class="pr-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Business Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">POS Billing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Inventory Tracking</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Customer Ledgers</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Col 2: Industry Solutions -->
+                                <div class="px-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Industry Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/pos-for-mobile-business" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Mobile Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Grocery Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pharmacies</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Electronics Store</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Wholesale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Clothing Store</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-    <main class="container mx-auto px-4 pt-10 md:pt-16 pb-16 md:pb-24">
+                                <!-- Col 3: Resources -->
+                                <div class="pl-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Resources</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Features</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pricing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/about-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">About Us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Contact Us</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/pricing" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Pricing</a>
+                    <a href="/contact-us" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Contact</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden md:flex">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-[#ED1A3B] hover:bg-[#D91532] text-white px-5 py-2 rounded-md text-sm font-bold transition-all shadow-md shadow-red-500/10">
+                        Go to App
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu" class="text-gray-600 hover:text-gray-950 focus:outline-none">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white shadow-inner">
+            <div class="px-6 pt-2 pb-4 space-y-1">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Home</a>
+                
+                <!-- Mobile Solutions Collapsible Accordion (Pure CSS & lightweight JS) -->
+                <div>
+                    <button id="mobile-solutions-btn" class="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors focus:outline-none">
+                        <span>Solutions</span>
+                        <svg id="mobile-solutions-arrow" class="w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Collapsible Solutions Content -->
+                    <div id="mobile-solutions-content" class="hidden pl-6 pr-3 py-2 space-y-1 bg-gray-50/50 rounded-xl mt-1 border border-gray-200/50 shadow-inner">
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-2 pb-1 pl-3">Business</div>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">POS Billing</a>
+                        <a href="/features" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Inventory Tracking</a>
+                        <a href="/pricing" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Customer Ledgers</a>
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-3 pb-1 pl-3">Industries</div>
+                        <a href="/pos-for-mobile-business" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Mobile Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Grocery Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Pharmacies</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Electronics Store</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Wholesale</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Clothing Store</a>
+                    </div>
+                </div>
+
+                <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Pricing</a>
+                <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Contact</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="block mt-4 text-center bg-[#ED1A3B] text-white px-4 py-2 rounded-md text-base font-bold">Go to App</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Script directly embedded to handle menu & accordion -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+
+            // Mobile Solutions Accordion Toggle Logic
+            const solutionsBtn = document.getElementById('mobile-solutions-btn');
+            const solutionsContent = document.getElementById('mobile-solutions-content');
+            const solutionsArrow = document.getElementById('mobile-solutions-arrow');
+            if (solutionsBtn && solutionsContent && solutionsArrow) {
+                solutionsBtn.addEventListener('click', () => {
+                    solutionsContent.classList.toggle('hidden');
+                    solutionsArrow.classList.toggle('rotate-180');
+                });
+            }
+        });
+    </script>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-16 pt-12 md:pt-16 pb-16 md:pb-24">
         
         <!-- Page Header -->
         <div class="max-w-3xl mx-auto text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tighter mb-6">Contact Us</h1>
-            <p class="text-gray-400 text-lg leading-relaxed">
-                Get in touch with us for reliable point-of-sale software in Pakistan and receive expert support for your business. Whether you need assistance with a offline-first cloud based POS system, have a sales question, or want to explore our point of sale solutions, our team is ready to help you. We offer fast and professional support to keep your business operations running smoothly. Contact us today and find the right POS system that fits your needs.
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tighter mb-6">Contact Us</h1>
+            <p class="text-gray-500 text-lg leading-relaxed">
+                Get in touch with us for reliable point-of-sale software in Pakistan and receive expert support for your business. Whether you need assistance with an offline-first cloud based POS system, have a sales question, or want to explore our point of sale solutions, our team is ready to help you. We offer fast and professional support to keep your business operations running smoothly. Contact us today and find the right POS system that fits your needs.
             </p>
         </div>
 
         <!-- Contact Section (2 Columns: Form & Info) -->
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 mb-32">
             
             <!-- Left Column: Formspree Form -->
-            <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 shadow-sm h-fit">
-                <h2 class="text-2xl font-bold text-white mb-2">Get in touch</h2>
-                <p class="text-gray-400 mb-8 text-sm">We're here to help you scale your business. Please simply fill in the form below. Our team will respond to you as quickly as possible.</p>
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm h-fit">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Get in touch</h2>
+                <p class="text-gray-500 mb-8 text-sm">We're here to help you scale your business. Please simply fill in the form below. Our team will respond to you as quickly as possible.</p>
                 
                 <!-- Form Container -->
                 <div id="form-container">
                     <form id="contact-form" action="https://formspree.io/f/mwvypygy" method="POST" class="space-y-5">
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
-                            <input type="text" name="name" required class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600" placeholder="John Doe">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" name="name" required class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:outline-none focus:border-[#ED1A3B] transition-colors placeholder-gray-400" placeholder="John Doe">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Your Email</label>
-                            <input type="email" name="email" required class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600" placeholder="john@example.com">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                            <input type="email" name="email" required class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:outline-none focus:border-[#ED1A3B] transition-colors placeholder-gray-400" placeholder="john@example.com">
                         </div>
-                        <!-- Nayi Phone Number Field -->
+                        <!-- Phone Number Field -->
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Phone Number <span class="text-gray-600 text-xs ml-1">(Optional)</span></label>
-                            <input type="tel" name="phone" class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600" placeholder="+92 300 1234567">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number <span class="text-gray-400 text-xs ml-1">(Optional)</span></label>
+                            <input type="tel" name="phone" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:outline-none focus:border-[#ED1A3B] transition-colors placeholder-gray-400" placeholder="+92 300 1234567">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                            <textarea name="message" rows="5" required class="w-full bg-[#121212] border border-[#1e1e1e] rounded-lg p-3 text-white focus:outline-none focus:border-[#3ecf8e] transition-colors placeholder-gray-600 resize-none" placeholder="How can we help you?"></textarea>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea name="message" rows="5" required class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:outline-none focus:border-[#ED1A3B] transition-colors placeholder-gray-400 resize-none" placeholder="How can we help you?"></textarea>
                         </div>
-                        <button type="submit" id="submit-btn" class="w-full bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-6 py-3 rounded-md text-base font-bold transition-all shadow-[0_0_15px_rgba(62,207,142,0.1)] flex justify-center items-center gap-2">
+                        <button type="submit" id="submit-btn" class="w-full bg-[#ED1A3B] text-white hover:bg-[#D91532] px-6 py-3 rounded-md text-base font-bold transition-all shadow-md shadow-red-500/10 flex justify-center items-center gap-2">
                             <span>Send Message</span>
                         </button>
                     </form>
                 </div>
 
-                <!-- Success Message (Shuru mein chupa hua hoga) -->
+                <!-- Success Message (Initially hidden) -->
                 <div id="success-message" class="hidden h-full flex-col items-center justify-center text-center py-12">
-                    <div class="w-16 h-16 bg-[#3ecf8e]/10 border border-[#3ecf8e]/20 rounded-full flex items-center justify-center mb-6 text-[#3ecf8e] mx-auto">
+                    <div class="w-16 h-16 bg-red-50 border border-red-100 rounded-full flex items-center justify-center mb-6 text-[#ED1A3B] mx-auto shadow-sm">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Message Sent Successfully!</h3>
-                    <p class="text-gray-400 mb-8">Thank you for reaching out. Our team will review your message and get back to you shortly.</p>
-                    <button onclick="resetForm()" class="text-[#3ecf8e] hover:text-white transition-colors text-sm font-medium border border-[#3ecf8e]/30 px-4 py-2 rounded-md hover:bg-[#3ecf8e]/10">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Message Sent Successfully!</h3>
+                    <p class="text-gray-505 mb-8">Thank you for reaching out. Our team will review your message and get back to you shortly.</p>
+                    <button onclick="resetForm()" class="text-[#ED1A3B] hover:text-[#D91532] transition-colors text-sm font-semibold border border-red-100 px-4 py-2 rounded-md hover:bg-red-50">
                         Send another message
                     </button>
                 </div>
@@ -141,29 +378,29 @@ function gtag_report_conversion(url) {
             <!-- Right Column: Info Cards -->
             <div class="space-y-6">
                 <!-- Info Card 1 -->
-                <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 hover:border-[#3ecf8e]/30 transition-all">
-                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-lg flex items-center justify-center mb-6 text-[#3ecf8e]">
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all shadow-sm">
+                    <div class="bg-red-50 w-12 h-12 rounded-lg flex items-center justify-center mb-6 text-[#ED1A3B] border border-red-100 shadow-sm">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">How can we help?</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">How can we help?</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
                         We offer full support for point of sale software in Pakistan, from cloud based POS systems to complete retail solutions. Whether you need technical help, setup guidance, or details about our POS system features, our team is ready to assist you quickly and reliably. We review every request carefully to find the best solution and keep your business running smoothly.
                     </p>
                 </div>
 
                 <!-- Info Card 2 -->
-                <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 hover:border-[#3ecf8e]/30 transition-all">
-                    <div class="bg-[#1e1e1e] w-12 h-12 rounded-lg flex items-center justify-center mb-6 text-[#3ecf8e]">
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-all shadow-sm">
+                    <div class="bg-red-50 w-12 h-12 rounded-lg flex items-center justify-center mb-6 text-[#ED1A3B] border border-red-100 shadow-sm">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Trusted SadaPOS Solutions</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Trusted SadaPOS Solutions</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">
                         SadaPOS brings reliable and modern point-of-sale software to businesses across Pakistan. Our cloud-based POS system makes it easy to manage your sales, inventory, and customer information all in one place.
                     </p>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                        We provide complete POS solutions for retail shops, restaurants, and growing businesses. With our simple yet powerful point-of-sale system, you can run your daily tasks smoothly, reduce mistakes, and make smarter decisions for your business.
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                        We provide complete POS solutions for retail shops, pharmacies, and growing businesses. With our simple yet powerful point-of-sale system, you can run your daily tasks smoothly, reduce mistakes, and make smarter decisions for your business.
                     </p>
-                    <p class="text-gray-400 text-sm leading-relaxed">
+                    <p class="text-gray-500 text-sm leading-relaxed">
                         Our mission is to offer secure, flexible, and user-friendly POS software that helps your business grow quickly, even in a fast-changing market.
                     </p>
                 </div>
@@ -172,73 +409,122 @@ function gtag_report_conversion(url) {
 
         <!-- FAQ Section -->
         <section class="max-w-3xl mx-auto text-center relative z-10 pb-20">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tighter">Frequently Asked Questions</h2>
-            <p class="text-gray-400 text-lg mb-12">Get answers to common questions about our Sada POS system, retail point of sale software, and POS support services. Learn how our easy-to-use point of sale solutions and business management tools can help your business grow efficiently.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tighter">Frequently Asked Questions</h2>
+            <p class="text-gray-500 text-base mb-12">Get answers to common questions about our Sada POS system, retail point of sale software, and POS support services. Learn how our easy-to-use point of sale solutions and business management tools can help your business grow efficiently.</p>
 
             <div class="text-left space-y-4">
                 <!-- FAQ 1 -->
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Can I try a free demo of Sada POS system?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] transition-colors">
+                        <span class="text-base md:text-lg">Can I try a free demo of Sada POS system?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
                         Yes, you can start with the free plan, and just contact us for a demo of the growth or pro plans. We will give you a free demo of our online POS system and other solutions.
                     </div>
                 </details>
 
                 <!-- FAQ 2 -->
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Which types of businesses can use Sada POS?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] transition-colors">
+                        <span class="text-base md:text-lg">Which types of businesses can use Sada POS?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
-                        Our POS software works for many businesses, like shops, restaurants, and any other business that wants to easily track sales, stock and services.
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Our POS software works for many businesses, like shops, mobile stores, grocery stores, pharmacies, and any other retail business that wants to easily track sales, stock and services.
                     </div>
                 </details>
 
                 <!-- FAQ 3 -->
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">How fast do you reply to questions?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] transition-colors">
+                        <span class="text-base md:text-lg">How fast do you reply to questions?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
                             <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
                         Our team usually replies within 24 hours with clear help and support for your questions.
                     </div>
                 </details>
             </div>
         </section>
 
-        <!-- Final Call to Action (CTA) Section -->
-        <section class="mt-10 max-w-4xl mx-auto text-center relative z-10 pb-10">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter leading-tight">
-                Ready to Start Growing Your Business with SadaPOS?
-            </h2>
-            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
-                Still handling sales and daily work by hand? SadaPOS helps you automate your business with a powerful offline-first point of sale software in Pakistan. Save time, reduce mistakes, and boost your efficiency. Upgrade to a smart cloud-based POS system and easily manage everything from one place.
-            </p>
-            <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
-                Start Now for Free
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-            </a>
+        <!-- Final Call to Action (CTA) Section (Vyapar-Style Crimson Box) -->
+        <section class="mt-20 max-w-5xl mx-auto text-center relative z-10 px-4 mb-24">
+            <div class="bg-[#ED1A3B] rounded-3xl py-12 px-6 md:px-12 text-white relative overflow-hidden shadow-xl shadow-red-500/10">
+                
+                <!-- Background subtle decorative light gradient -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none"></div>
+
+                <!-- Main Heading -->
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tighter leading-tight relative z-10">
+                    Ready to Start Growing Your Business with SadaPOS?
+                </h2>
+
+                <!-- Subheading -->
+                <p class="text-red-100 text-sm md:text-base max-w-3xl mx-auto mb-8 leading-relaxed relative z-10">
+                    Still handling sales and daily work by hand? SadaPOS helps you automate your business with a powerful offline-first point of sale software in Pakistan. Save time, reduce mistakes, and boost your efficiency. Upgrade to a smart cloud-based POS system and easily manage everything from one place.
+                </p>
+
+                <!-- Centered White Pill Button -->
+                <div class="flex justify-center relative z-10">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-white text-[#ED1A3B] hover:bg-red-50 px-8 py-3.5 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-black/5">
+                        Start Now for Free
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
-    <!-- Yahan Javascript khud Footer lagayegi -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer Section (SadaPOS Light ERP - Static HTML for 100% SEO Indexation) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-20 pb-10 relative z-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16 text-center">
+            
+            <!-- Social Media Icons -->
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://www.facebook.com/sadapos" aria-label="Facebook" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@sadapos" aria-label="YouTube" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/sadaposofficial/" aria-label="Instagram" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
 
-    <!-- Header aur Footer ki Javascript files -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+                The all-in-one POS system. Precision inventory, automated financials, and global sync technology designed for all type of retailers and wholesale businesses of all sizes.
+            </p>
+
+            <!-- Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-12 text-sm">
+                <a href="/privacy-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Privacy Policy</a>
+                <a href="/terms-of-service" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Terms of Service</a>
+                <a href="/refunds-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Refunds Policy</a>
+                <a href="/contact-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Contact Us</a>
+                <a href="/pricing" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Pricing</a>
+                <a href="/about-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">About Us</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-500 text-xs border-t border-gray-200 pt-8">
+                &copy; 2025 - 2026 SadaPOS. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
     <!-- Formspree AJAX Submission Script -->
     <script>
@@ -248,11 +534,11 @@ function gtag_report_conversion(url) {
         const submitBtn = document.getElementById('submit-btn');
 
         form.addEventListener('submit', async function(e) {
-            e.preventDefault(); // Yeh page ko redirect hone se rokega
+            e.preventDefault(); // Prevents default form redirect
             
-            // Button ko loading state mein badalna
+            // Turn submit button into loading state
             const originalBtnText = submitBtn.innerHTML;
-            submitBtn.innerHTML = `<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-[#121212]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Sending...`;
+            submitBtn.innerHTML = `<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Sending...`;
             submitBtn.disabled = true;
 
             const formData = new FormData(form);
@@ -267,7 +553,7 @@ function gtag_report_conversion(url) {
                 });
 
                 if (response.ok) {
-                    // Form chupa dein aur Success message dikhayein
+                    // Hide form and show success message smoothly
                     formContainer.classList.add('hidden');
                     successMessage.classList.remove('hidden');
                     successMessage.classList.add('flex');
@@ -278,13 +564,13 @@ function gtag_report_conversion(url) {
             } catch (error) {
                 alert("Oops! There was a problem submitting your form.");
             } finally {
-                // Button ko wapis normal halat mein lana
+                // Restore button back to normal state
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
             }
         });
 
-        // Naya message bhejne ke liye form wapis lana
+        // Show form again to send another message
         function resetForm() {
             successMessage.classList.add('hidden');
             successMessage.classList.remove('flex');

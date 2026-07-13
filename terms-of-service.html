@@ -49,7 +49,11 @@
         }
     </script>
     <style>
+        html { font-size: 17px; }
         body { font-family: 'Inter', sans-serif; }
+        /* Safe overrides for light-themed legal text */
+        .prose h2, .prose strong { color: #111827 !important; }
+        .prose a { color: #ED1A3B !important; }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18032729402">
@@ -76,20 +80,255 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-<body class="bg-[#121212] text-gray-400 font-sans antialiased">
+<body class="bg-gray-50 text-gray-600 font-sans antialiased">
     
-    <!-- Yahan Javascript khud Header lagayegi -->
-    <div id="header-placeholder"></div>
+    <!-- Header Section (SadaPOS Light ERP Mega Menu) -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/">
+                        <img src="sada-pos-logo.png" alt="SadaPOS Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu - Vertically Aligned correctly using items-center -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Home</a>
+                    
+                    <!-- Solutions Mega Menu (Pure CSS Hover, 100% SEO Friendly & Balanced Layout) -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors focus:outline-none py-5">
+                            Solutions
+                            <svg class="w-4 h-4 text-gray-400 group-hover:text-[#ED1A3B] transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <!-- Mega Menu Dropdown Container -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0 hidden group-hover:block w-[780px] transition-all duration-300">
+                            <!-- divide-x adds vertical light divider lines between columns -->
+                            <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl grid grid-cols-3 divide-x divide-gray-100 mt-2">
+                                
+                                <!-- Col 1: Business Solutions -->
+                                <div class="pr-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Business Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">POS Billing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Inventory Tracking</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Customer Ledgers</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Col 2: Industry Solutions -->
+                                <div class="px-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Industry Solutions</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/pos-for-mobile-business" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Mobile Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Grocery Stores</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pharmacies</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Electronics Store</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Wholesale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Clothing Store</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Col 3: Resources -->
+                                <div class="pl-6">
+                                    <h4 class="text-[11px] font-extrabold uppercase tracking-wider text-[#ED1A3B] mb-5 pl-2">Resources</h4>
+                                    <ul class="space-y-1">
+                                        <li>
+                                            <a href="/features" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Features</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Pricing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/about-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">About Us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact-us" class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-red-50 text-[#ED1A3B] flex items-center justify-center shrink-0 border border-red-100/50 shadow-sm">
+                                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                                </div>
+                                                <span class="text-sm font-semibold text-gray-600 group-hover/item:text-gray-900">Contact Us</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/pricing" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Pricing</a>
+                    <a href="/contact-us" class="text-sm font-semibold text-gray-600 hover:text-[#ED1A3B] transition-colors py-5">Contact</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden md:flex">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="bg-[#ED1A3B] hover:bg-[#D91532] text-white px-5 py-2 rounded-md text-sm font-bold transition-all shadow-md shadow-red-500/10">
+                        Go to App
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu" class="text-gray-600 hover:text-gray-950 focus:outline-none">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white shadow-inner">
+            <div class="px-6 pt-2 pb-4 space-y-1">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Home</a>
+                
+                <!-- Mobile Solutions Collapsible Accordion (Pure CSS & lightweight JS) -->
+                <div>
+                    <button id="mobile-solutions-btn" class="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors focus:outline-none">
+                        <span>Solutions</span>
+                        <svg id="mobile-solutions-arrow" class="w-5 h-5 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Collapsible Solutions Content -->
+                    <div id="mobile-solutions-content" class="hidden pl-6 pr-3 py-2 space-y-1 bg-gray-50/50 rounded-xl mt-1 border border-gray-200/50 shadow-inner">
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-2 pb-1 pl-3">Business</div>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">POS Billing</a>
+                        <a href="/features" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Inventory Tracking</a>
+                        <a href="/pricing" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Customer Ledgers</a>
+                        
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#ED1A3B] pt-3 pb-1 pl-3">Industries</div>
+                        <a href="/pos-for-mobile-business" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Mobile Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Grocery Stores</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Pharmacies</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Electronics Store</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Wholesale</a>
+                        <a href="/" class="block px-3 py-1.5 rounded-md text-sm font-semibold text-gray-500 hover:text-gray-900">Clothing Store</a>
+                    </div>
+                </div>
+
+                <a href="/pricing" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Pricing</a>
+                <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">Contact</a>
+                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="block mt-4 text-center bg-[#ED1A3B] text-white px-4 py-2 rounded-md text-base font-bold">Go to App</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Script directly embedded to handle menu & accordion -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+
+            // Mobile Solutions Accordion Toggle Logic
+            const solutionsBtn = document.getElementById('mobile-solutions-btn');
+            const solutionsContent = document.getElementById('mobile-solutions-content');
+            const solutionsArrow = document.getElementById('mobile-solutions-arrow');
+            if (solutionsBtn && solutionsContent && solutionsArrow) {
+                solutionsBtn.addEventListener('click', () => {
+                    solutionsContent.classList.toggle('hidden');
+                    solutionsArrow.classList.toggle('rotate-180');
+                });
+            }
+        });
+    </script>
 
     <main class="container mx-auto px-4 pt-10 md:pt-16 pb-16 md:pb-24">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tighter mb-4">Terms of Service</h1>
-                <p class="text-gray-400">Last updated: May 2026</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tighter mb-4">Terms of Service</h1>
+                <p class="text-gray-500">Last updated: May 2026</p>
             </div>
 
-            <div class="bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 md:p-12 shadow-sm">
-                <div class="prose prose-invert prose-emerald max-w-none text-gray-400 leading-relaxed space-y-6">
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 md:p-12 shadow-sm">
+                <div class="prose max-w-none text-gray-600 leading-relaxed space-y-6">
                     <p>These Terms of Service (“Terms”) set out the terms and conditions for your use of the Services offered by SadaPOS. By creating an account or using any of our Services, you acknowledge that you have read, understood, and agreed to these Terms and our <a href="/privacy-policy" class="text-[#3ecf8e] hover:underline">Privacy Policy</a> on behalf of yourself or the entity you represent.</p>
                     <p>If you do not agree to these Terms, you must not use the Services. All rights not expressly granted in these Terms are reserved by SadaPOS.</p>
 
@@ -156,12 +395,47 @@ function gtag_report_conversion(url) {
         </div>
     </main>
 
-    <!-- Yahan Javascript khud Footer lagayegi -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer Section (SadaPOS Light ERP - Static HTML for 100% SEO Indexation) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-20 pb-10 relative z-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16 text-center">
+            
+            <!-- Social Media Icons -->
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://www.facebook.com/sadapos" aria-label="Facebook" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@sadapos" aria-label="YouTube" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/sadaposofficial/" aria-label="Instagram" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
 
-    <!-- Header aur Footer ki Javascript files -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+                The all-in-one POS system. Precision inventory, automated financials, and global sync technology designed for all type of retailers and wholesale businesses of all sizes.
+            </p>
+
+            <!-- Links Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-12 text-sm">
+                <a href="/privacy-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Privacy Policy</a>
+                <a href="/terms-of-service" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Terms of Service</a>
+                <a href="/refunds-policy" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Refunds Policy</a>
+                <a href="/contact-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Contact Us</a>
+                <a href="/pricing" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">Pricing</a>
+                <a href="/about-us" class="text-gray-500 hover:text-[#ED1A3B] transition-colors">About Us</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-500 text-xs border-t border-gray-200 pt-8">
+                &copy; 2025 - 2026 SadaPOS. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
