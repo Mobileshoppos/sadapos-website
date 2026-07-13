@@ -115,7 +115,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-<body class="bg-[#121212] text-gray-400 font-sans antialiased">
+<body class="bg-gray-50 text-gray-600 font-sans antialiased">
     
     <!-- Header Section (SadaPOS Light ERP Mega Menu) -->
     <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md shadow-sm">
@@ -361,232 +361,749 @@ function gtag_report_conversion(url) {
         <!-- Background Glow Effect (Khoobsurti ke liye) -->
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[300px] bg-[#3ecf8e]/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
-        <!-- Hero Section -->
-        <div class="max-w-4xl mx-auto text-center mb-24 relative z-10">
+        <!-- Hero Section (Vyapar Style Layout - Light Theme) -->
+        <div class="max-w-7xl mx-auto mb-16 mt-8 relative z-10 px-4 md:px-8">
             
-            <!-- Modern Badge with pulsating dot -->
-            <div class="inline-flex items-center gap-2 bg-[#3ecf8e]/10 border border-[#3ecf8e]/20 text-[#3ecf8e] px-4 py-1.5 rounded-full text-xs font-bold tracking-widest mb-8 uppercase shadow-[0_0_15px_rgba(62,207,142,0.1)]">
-                <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3ecf8e] opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-[#3ecf8e]"></span>
-                </span>
-                Industry Specific Solution
-            </div>
-
-            <!-- Gradient Heading -->
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-[1.1] mb-6">
-                POS For <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Mobile Business</span> <br class="hidden md:block" /> & Electronic Shops
-            </h1>
-
-            <!-- Subheading -->
-            <h2 class="text-xl md:text-2xl font-medium text-gray-300 mb-8 max-w-2xl mx-auto">
-                Run your mobile shop smoother, work smarter, <span class="text-[#3ecf8e]">earn more.</span>
-            </h2>
-
-            <!-- Paragraph (Text size adjusted to look less like an article) -->
-            <p class="text-base md:text-lg text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Running a mobile shop usually means dealing with mismatched stock, billing blunders, and payments that never come in on time. Powered by our reliable <a href="/" class="text-[#3ecf8e] hover:underline font-medium">point of sale software</a>, SadaPOS is made to fix exactly that. It tracks IMEI numbers, inventory, and sales in real time, so you always know what’s going on. It handles cash and credit smoothly, and keeps a close watch on your day-to-day operations. With smart, easy-to-read reports, your store stays in order, and you grow your profits without the stress.
-            </p>
-
-            <!-- Modern CTA Button -->
-            <div class="flex justify-center">
-                <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="group flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 shadow-[0_0_30px_rgba(62,207,142,0.25)] hover:shadow-[0_0_40px_rgba(62,207,142,0.4)] hover:-translate-y-1">
-                    Start Now for Free
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <!-- Why Generic POS Fails Section -->
-        <div class="max-w-5xl mx-auto bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 md:p-12 mb-24 shadow-sm flex flex-col md:flex-row items-center gap-10">
-            <div class="md:w-1/2">
-                <h3 class="text-3xl font-extrabold text-white mb-4 tracking-tight">Mobiles and Electronics Stores Need a <span class="text-[#3ecf8e]">Smart POS</span></h3>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                    Not all businesses are the same, so why use the same POS? A general grocery or retail POS won’t cut it. You need an electronic store POS that speaks your language. Mobile shops specifically deal with:
-                </p>
-                <ul class="space-y-3">
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Unique IMEI / Serial tracking</li>
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Offline-first technology</li>
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Multi-counter support</li>
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Complex repairs & warranties</li>
-                </ul>
-            </div>
-            <div class="md:w-1/2 bg-[#121212] border border-[#1e1e1e] p-6 rounded-xl relative">
-                <div class="absolute -top-4 -right-4 bg-[#3ecf8e] text-[#121212] p-3 rounded-full shadow-lg">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                
+                <!-- Left Column: Text & CTA -->
+                <div class="lg:w-5/12 text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-[2.75rem] font-extrabold text-gray-800 tracking-tighter leading-[1.15] mb-6">
+                        POS For <br class="hidden lg:block" />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ED1A3B] to-orange-500">Mobile Businesses</span>
+                    </h1>
+                    <p class="text-base text-gray-600 mb-8 leading-relaxed">
+                        Run your business smarter with SadaPOS's Mobile Store Billing Software. Easily track sales, manage inventory, payments, IMEI tracking, and professional invoicing, all in one app mainly built for mobile shop owners.
+                    </p>
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#ED1A3B] text-white hover:bg-[#D91532] px-8 py-3.5 rounded-lg text-base font-bold transition-all duration-300 shadow-lg shadow-red-500/20">
+                        Start Now for Free
+                    </a>
                 </div>
-                <h4 class="text-xl font-bold text-white mb-3">Introduction to POS for Electronic Business!</h4>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                    If you own a mobile or electronics shop or are planning to start one, you need to know about the POS system for cell phone stores, and why choosing the right one like SadaPOS can completely transform your business.
-                </p>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                    A mobile POS system is basically the brain of your shop. It manages your sales, tracks inventory, keeps customer records, and even helps you handle warranties and repairs.
-                </p>
-                <p class="text-white font-medium text-sm border-l-2 border-[#3ecf8e] pl-4 italic">
-                    "Think of it as your digital shop manager—one that never sleeps, never forgets, and never makes calculation mistakes."
-                </p>
-            </div>
-        </div>
 
-        <!-- Key Features Section (Updated Home Page Design) -->
-        <section class="max-w-7xl mx-auto px-4 mb-24 relative z-10">
-            
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tighter">Key Features</h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Let’s break down the must-have features that turn retail chaos into complete clarity.</p>
-            </div>
-
-            <!-- 3 Columns Features Grid -->
-            <div class="max-w-6xl mx-auto">
-                <dl class="grid grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-3">
-                    
+                <!-- Middle Column: 3 Features -->
+                <div class="lg:w-2/12 flex flex-row lg:flex-col justify-center gap-6 lg:gap-10 w-full">
                     <!-- Feature 1 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4M4 8h16M4 16h16"></path></svg>
-                            </div>
-                            IMEI & Serials Tracking
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Every phone has a unique identifier, its IMEI number. Our POS system for cell phone stores not only allows you to track each phone individually from purchase to sale, but also helps prevent fraud and theft.</dd>
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="w-14 h-14 bg-red-50 border border-red-100 rounded-2xl flex items-center justify-center text-[#ED1A3B] mb-3 group-hover:scale-110 transition-transform shadow-sm">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <span class="text-xs font-bold text-gray-700 leading-tight">Quick Billing <br/> & Checkout</span>
                     </div>
-
                     <!-- Feature 2 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                            </div>
-                            Smart Stock Management
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Imagine selling a phone that is already out of stock. Avoid embarrassment and frustration. With a professional mobile POS system, you get real-time stock updates, low-stock alerts, and accurate inventory counts.</dd>
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="w-14 h-14 bg-emerald-50 border border-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 mb-3 group-hover:scale-110 transition-transform shadow-sm">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <span class="text-xs font-bold text-gray-700 leading-tight">Smart Stock <br/> Control</span>
                     </div>
-
                     <!-- Feature 3 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                            </div>
-                            Customer & Supplier Ledgers
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">No more messy notebooks. SadaPOS securely stores your customer balances, supplier payments, and their complete transaction histories in one place so that financial records are kept safe and transparent.</dd>
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="w-14 h-14 bg-blue-50 border border-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-3 group-hover:scale-110 transition-transform shadow-sm">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                        </div>
+                        <span class="text-xs font-bold text-gray-700 leading-tight">All Payment <br/> Methods</span>
                     </div>
+                </div>
 
-                    <!-- Feature 4 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                            </div>
-                            Warranty & Repair Tracking
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Electronics shops not only sell but also provide repair services. With the right POS, you can easily track warranty claims, manage repair tasks in a professional manner, and notify customers when devices are ready.</dd>
-                    </div>
+                <!-- Right Column: Image -->
+                <div class="lg:w-5/12 flex justify-center lg:justify-end mt-8 lg:mt-0">
+                    <img src="point-of-sale-software.webp" alt="SadaPOS Mobile Store POS Software" class="w-full max-w-md h-auto rounded-xl shadow-md border border-gray-200 bg-white p-2">
+                </div>
 
-                    <!-- Feature 5 -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                            </div>
-                            Faster Billing & Reduced Errors
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Creating receipts instantly and serving more customers in less time is only possible with a smart POS system. Because humans can make mistakes, our automated system ensures product pricing and totals stay 100% accurate.</dd>
-                    </div>
-
-                    <!-- Feature 6 (Updated) -->
-                    <div class="relative pl-12">
-                        <dt class="text-base font-bold leading-7 text-white">
-                            <div class="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-lg bg-[#3ecf8e]/10">
-                                <!-- Barcode Icon -->
-                                <svg class="h-5 w-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h1v12H4V6zm3 0h2v12H7V6zm3 0h1v12h-1V6zm3 0h3v12h-3V6zm4 0h2v12h-2V6z"></path></svg>
-                            </div>
-                            Barcode Scanner Supported
-                        </dt>
-                        <dd class="mt-2 text-sm leading-6 text-gray-400">Speed up your checkout process and manage accessories effortlessly. SadaPOS supports all standard USB and Bluetooth barcode scanners for quick billing and accurate inventory tracking.</dd>
-                    </div>
-
-                </dl>
-            </div>
-        </section>
-        <!-- Plug & Play Hardware Section -->
-        <div class="max-w-5xl mx-auto bg-[#171717] border border-[#1e1e1e] rounded-2xl p-8 md:p-12 mb-24 shadow-sm flex flex-col md:flex-row items-center gap-10">
-            <div class="md:w-1/2">
-                <h3 class="text-3xl font-extrabold text-white mb-4 tracking-tight">Plug & Play <span class="text-[#3ecf8e]">Hardware Compatibility</span></h3>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                    Worried about replacing your existing hardware? Don't be. SadaPOS is designed to work seamlessly with the equipment you already have in your mobile shop.
-                </p>
-                <ul class="space-y-3">
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> USB & Bluetooth Barcode Scanners</li>
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Thermal Receipt Printers (58mm & 80mm)</li>
-                    <li class="flex items-center gap-3 text-gray-300"><svg class="w-5 h-5 text-[#3ecf8e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Standard Cash Drawers</li>
-                </ul>
-            </div>
-            <div class="md:w-1/2 bg-[#121212] border border-[#1e1e1e] p-10 rounded-xl flex items-center justify-center">
-                <!-- Printer Icon -->
-                <svg class="w-32 h-32 text-[#1e1e1e]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
             </div>
         </div>
 
-        <!-- Mobile Shop FAQs Section -->
-        <section class="max-w-4xl mx-auto text-center relative z-10 mb-24">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tighter">Mobile Shop FAQs</h2>
-            <p class="text-gray-400 text-lg mb-12">Common questions from mobile and electronics retailers.</p>
+        <!-- Top Features of SadaPOS Section (Vyapar Style Expanding Cards) -->
+        <!-- Top Features of SadaPOS Section (Vyapar Style Expanding Cards) -->
+        <section class="max-w-7xl mx-auto px-4 mb-24 relative z-10 pt-10">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 tracking-tighter mb-4">
+                    Top Features of <span class="text-[#ED1A3B]">SadaPOS</span> Mobile Shop Software
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                    Discover the essential tools designed specifically for mobile and electronics retailers to automate billing, manage inventory, and boost daily profits.
+                </p>
+            </div>
 
-            <div class="text-left space-y-4">
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">How does IMEI tracking prevent theft and fraud?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
-                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                        </span>
-                    </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
-                        Every time you purchase or sell a phone, its unique IMEI is recorded in SadaPOS. If a device goes missing or a customer tries to return a phone they didn't buy from you, you can instantly search the IMEI to verify its exact history in your store.
+            <!-- Expanding Cards Container -->
+            <div class="flex flex-col lg:flex-row gap-4 lg:h-[480px] w-full" id="feature-cards-container">
+                
+                <!-- Card 1: Quick & Easy Billing -->
+                <div class="feature-card active group/card flex flex-col lg:flex-row bg-orange-50 rounded-3xl overflow-hidden border border-orange-100 transition-all duration-500 ease-in-out cursor-default" style="flex-grow: 10;">
+                    
+                    <!-- Desktop Vertical Title -->
+                    <div class="hidden lg:flex group-[.active]/card:!hidden items-center justify-center w-20 xl:w-24 h-full hover:bg-orange-100/50 transition-colors cursor-pointer">
+                        <h3 class="text-xl font-bold text-gray-800 whitespace-nowrap" style="writing-mode: vertical-rl; transform: rotate(180deg);">Quick & Easy Billing</h3>
                     </div>
-                </details>
 
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Can I accept split payments (e.g., half cash, half card)?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
-                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                        </span>
-                    </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
-                        Yes! Mobile phones are expensive, and customers often pay using multiple methods. SadaPOS allows you to split a single bill into cash, credit card, or bank transfer easily at the checkout counter.
+                    <!-- Mobile Title -->
+                    <div class="flex lg:hidden group-[.active]/card:!hidden p-5 items-center justify-between hover:bg-orange-100/50 cursor-pointer">
+                        <h3 class="text-lg font-bold text-gray-800">Quick & Easy Billing</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </div>
-                </details>
 
-                <details class="group border border-[#1e1e1e] bg-[#171717] rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white hover:bg-[#1e1e1e] transition-colors">
-                        <span class="text-lg">Can I manage used (second-hand) phones and repairs?</span>
-                        <span class="transition duration-300 group-open:rotate-180 text-gray-500">
-                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                        </span>
-                    </summary>
-                    <div class="p-6 pt-0 text-gray-400 leading-relaxed border-t border-gray-800/50 mt-2">
-                        Absolutely. You can add used phones as unique inventory items with their specific purchasing costs. Additionally, our system lets you track repair jobs, parts used, and labor charges all in one place.
+                    <!-- Main Content -->
+                    <div class="hidden group-[.active]/card:flex flex-col lg:flex-row gap-8 p-6 lg:p-10 w-full h-full overflow-y-auto lg:overflow-hidden transition-opacity duration-700 opacity-0 group-[.active]/card:opacity-100">
+                        <div class="flex-1 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Quick & Easy Billing</h3>
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed">Using the SadaPOS Mobile Store Billing Software, you can effortlessly generate and manage invoices for your mobile shop with ease.</p>
+                            <ul class="space-y-4 text-sm text-gray-800">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Quick Billing:</b> Automatically create invoices and track payment status for each customer easily. Streamlines the entire billing process, saving time and effort.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Auto Reminders:</b> Set automatic payment reminders for due invoices by sending notifications directly to customers.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-orange-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Easy Notification Sharing:</b> Share digital receipts via SMS or WhatsApp. Reduce manual follow-ups and maintain transparency.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center">
+                            <img src="point-of-sale-software.webp" alt="Quick Billing" class="w-full max-w-sm rounded-xl shadow-lg border border-white">
+                        </div>
                     </div>
-                </details>
+                </div>
+
+                <!-- Card 2: Warranty and IMEI -->
+                <div class="feature-card group/card flex flex-col lg:flex-row bg-amber-50 rounded-3xl overflow-hidden border border-amber-100 transition-all duration-500 ease-in-out cursor-pointer" style="flex-grow: 1;">
+                    
+                    <div class="hidden lg:flex group-[.active]/card:!hidden items-center justify-center w-20 xl:w-24 h-full hover:bg-amber-100/50 transition-colors cursor-pointer">
+                        <h3 class="text-xl font-bold text-gray-800 whitespace-nowrap" style="writing-mode: vertical-rl; transform: rotate(180deg);">Warranty and IMEI Tracking</h3>
+                    </div>
+
+                    <div class="flex lg:hidden group-[.active]/card:!hidden p-5 items-center justify-between hover:bg-amber-100/50 cursor-pointer">
+                        <h3 class="text-lg font-bold text-gray-800">Warranty and IMEI Tracking</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+
+                    <div class="hidden group-[.active]/card:flex flex-col lg:flex-row gap-8 p-6 lg:p-10 w-full h-full overflow-y-auto lg:overflow-hidden transition-opacity duration-700 opacity-0 group-[.active]/card:opacity-100">
+                        <div class="flex-1 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Warranty and IMEI Tracking</h3>
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed">SadaPOS's mobile billing app makes your store more organized and improves after-sales service by reducing mistakes during exchanges or repairs.</p>
+                            <ul class="space-y-4 text-sm text-gray-800">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-amber-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Track IMEI Numbers:</b> Store and manage IMEI numbers for each mobile phone you sell to simplify warranty claims, improve service, and avoid mix-ups.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-amber-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Manage Warranty and Repairs:</b> Link products with warranty periods to quickly verify coverage, resolve issues faster, and build customer trust.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-amber-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Check Warranty Status:</b> Quickly check if a product is under warranty when a customer returns with an issue.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center">
+                            <img src="point-of-sale-system.jpg" alt="Warranty Tracking" class="w-full max-w-sm rounded-xl shadow-lg border border-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Inventory Tracking -->
+                <div class="feature-card group/card flex flex-col lg:flex-row bg-emerald-50 rounded-3xl overflow-hidden border border-emerald-100 transition-all duration-500 ease-in-out cursor-pointer" style="flex-grow: 1;">
+                    
+                    <div class="hidden lg:flex group-[.active]/card:!hidden items-center justify-center w-20 xl:w-24 h-full hover:bg-emerald-100/50 transition-colors cursor-pointer">
+                        <h3 class="text-xl font-bold text-gray-800 whitespace-nowrap" style="writing-mode: vertical-rl; transform: rotate(180deg);">Inventory Tracking</h3>
+                    </div>
+
+                    <div class="flex lg:hidden group-[.active]/card:!hidden p-5 items-center justify-between hover:bg-emerald-100/50 cursor-pointer">
+                        <h3 class="text-lg font-bold text-gray-800">Inventory Tracking</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+
+                    <div class="hidden group-[.active]/card:flex flex-col lg:flex-row gap-8 p-6 lg:p-10 w-full h-full overflow-y-auto lg:overflow-hidden transition-opacity duration-700 opacity-0 group-[.active]/card:opacity-100">
+                        <div class="flex-1 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Inventory Tracking</h3>
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed">SadaPOS helps to manage and track inventory smartly, so your store runs smoothly and never misses a sale.</p>
+                            <ul class="space-y-4 text-sm text-gray-800">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-emerald-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Real-Time Inventory Updates:</b> With SadaPOS, the inventory will auto-update after every sale and purchase. You always know what stock you have without manual work.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-emerald-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Detailed Stock Reports:</b> Get all kinds of inventory reports needed to understand fast-moving and slow-moving items. It helps you make better decisions and improve cash flow.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-emerald-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Low Stock Alerts:</b> Set low stock alerts and get instant notifications to reorder on time and avoid stockouts.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center">
+                            <img src="point-of-sale-software-reports.jpg" alt="Inventory Tracking" class="w-full max-w-sm rounded-xl shadow-lg border border-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Barcode Integration -->
+                <div class="feature-card group/card flex flex-col lg:flex-row bg-blue-50 rounded-3xl overflow-hidden border border-blue-100 transition-all duration-500 ease-in-out cursor-pointer" style="flex-grow: 1;">
+                    
+                    <div class="hidden lg:flex group-[.active]/card:!hidden items-center justify-center w-20 xl:w-24 h-full hover:bg-blue-100/50 transition-colors cursor-pointer">
+                        <h3 class="text-xl font-bold text-gray-800 whitespace-nowrap" style="writing-mode: vertical-rl; transform: rotate(180deg);">Barcode Integration</h3>
+                    </div>
+
+                    <div class="flex lg:hidden group-[.active]/card:!hidden p-5 items-center justify-between hover:bg-blue-100/50 cursor-pointer">
+                        <h3 class="text-lg font-bold text-gray-800">Barcode Integration</h3>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+
+                    <div class="hidden group-[.active]/card:flex flex-col lg:flex-row gap-8 p-6 lg:p-10 w-full h-full overflow-y-auto lg:overflow-hidden transition-opacity duration-700 opacity-0 group-[.active]/card:opacity-100">
+                        <div class="flex-1 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Barcode Integration</h3>
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed">SadaPOS helps you manage your stock easily using barcodes. Each item gets a unique barcode for quick billing, fewer manual errors, and real-time tracking.</p>
+                            <ul class="space-y-4 text-sm text-gray-800">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Fast and Error-Free Billing:</b> With each item linked to a barcode, instant scanning during checkout ensures every sale is recorded accurately.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Barcode-Based Stock Updates:</b> The barcode inventory system keeps your stock data exact and up-to-date. Track fast-moving items easily and avoid overstocking.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-500 mt-1 text-lg leading-none">•</span>
+                                    <span><b>Smart Barcode Control:</b> Gain full control over your mobile store's inventory with SadaPOS. Easily locate products, maintain organized records, and boost store efficiency.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center">
+                            <img src="point-of-sale-software.webp" alt="Barcode Integration" class="w-full max-w-sm rounded-xl shadow-lg border border-white">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- JavaScript for Expanding Cards (Simplified & Bug Free) -->
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const cards = document.querySelectorAll('.feature-card');
+                    
+                    cards.forEach(card => {
+                        card.addEventListener('click', function() {
+                            if(this.classList.contains('active')) return;
+                            
+                            // Reset all cards
+                            cards.forEach(c => {
+                                c.classList.remove('active', 'cursor-default');
+                                c.classList.add('cursor-pointer');
+                                c.style.flexGrow = '1';
+                            });
+
+                            // Set clicked card to active
+                            this.classList.add('active', 'cursor-default');
+                            this.classList.remove('cursor-pointer');
+                            this.style.flexGrow = '10';
+                        });
+                    });
+                });
+            </script>
+        </section>
+
+        <!-- Powerful Add-On Features Section (Auto-Playing Tabs) -->
+        <section class="max-w-7xl mx-auto px-4 mb-24 relative z-10 pt-10 border-t border-gray-100">
+            
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 tracking-tighter mb-4">
+                    Powerful <span class="text-[#ED1A3B]">Add-On Features</span> to Streamline Your Business
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                    Take your store to the next level with advanced tools that handle everything from multi-device syncing to detailed financial tracking.
+                </p>
+            </div>
+
+            <!-- Tab Buttons Container -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="addon-tabs-container">
+                <button class="addon-btn px-5 py-2 border rounded-md text-sm font-semibold transition-colors duration-300 shadow-sm" data-index="0">Multi Payment Supports</button>
+                <button class="addon-btn px-5 py-2 border rounded-md text-sm font-semibold transition-colors duration-300 shadow-sm" data-index="1">IMEI & Batch Tracking</button>
+                <button class="addon-btn px-5 py-2 border rounded-md text-sm font-semibold transition-colors duration-300 shadow-sm" data-index="2">User Role & Multi-Device</button>
+                <button class="addon-btn px-5 py-2 border rounded-md text-sm font-semibold transition-colors duration-300 shadow-sm" data-index="3">Expense & Income Tracking</button>
+                <button class="addon-btn px-5 py-2 border rounded-md text-sm font-semibold transition-colors duration-300 shadow-sm" data-index="4">Item Categories & Brands</button>
+                <button class="addon-btn px-5 py-2 border rounded-md text-sm font-semibold transition-colors duration-300 shadow-sm" data-index="5">Reporting & Analytics</button>
+            </div>
+
+            <!-- Tab Content Panels Container -->
+            <div class="max-w-6xl mx-auto min-h-[400px] flex items-center">
+                
+                <!-- Panel 1: Multi Payment -->
+                <div class="addon-panel flex-col lg:flex-row gap-10 items-center w-full transition-opacity duration-500">
+                    <div class="lg:w-1/2 w-full flex justify-center">
+                        <img src="point-of-sale-software.webp" alt="Multi Payment Support" class="w-full max-w-md rounded-xl shadow-md border border-gray-100">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">SadaPOS allows multiple payment options, so your customers can pay via any method they choose, ensuring a smooth checkout experience.</p>
+                        <ul class="space-y-4 text-sm text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Supports Cash, Cards & Wallets:</b> Easily accept all types of payments including cash, credit/debit cards, and mobile wallets.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Auto-Update Ledgers:</b> Every customer payment is auto-updated in your financial records, saving time and reducing manual entry risks.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Track Payment Status Instantly:</b> Quickly check which bills are paid, unpaid, or partially paid in one centralized place.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 2: IMEI Tracking -->
+                <div class="addon-panel hidden flex-col lg:flex-row gap-10 items-center w-full transition-opacity duration-500">
+                    <div class="lg:w-1/2 w-full flex justify-center">
+                        <img src="point-of-sale-system.jpg" alt="IMEI Tracking" class="w-full max-w-md rounded-xl shadow-md border border-gray-100">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">Easily manage your mobile shop inventory by tracking products by unique IMEI numbers, models, and batches. Stay organized and sell smarter.</p>
+                        <ul class="space-y-4 text-sm text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>IMEI-Wise Tracking:</b> Track individual devices to handle warranties efficiently and prevent fraud or stock mix-ups.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Organize Stock by Model:</b> Keep your inventory structured by brand, model, and color so you always know what's available.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Faster Stock Audits:</b> Since items are uniquely identified, checking and counting your stock becomes quicker and 100% accurate.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 3: User Role & Multi-Device -->
+                <div class="addon-panel hidden flex-col lg:flex-row gap-10 items-center w-full transition-opacity duration-500">
+                    <div class="lg:w-1/2 w-full flex justify-center">
+                        <img src="point-of-sale-software-reports.jpg" alt="User Roles" class="w-full max-w-md rounded-xl shadow-md border border-gray-100">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">SadaPOS lets you use the app on multiple devices simultaneously and give customized access permissions to different staff members.</p>
+                        <ul class="space-y-4 text-sm text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Give Access as Needed:</b> Allow staff to only do what's needed, like billing or checking stock, without giving full access to financials.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Use on Many Devices:</b> Run SadaPOS on multiple phones or computers at the same time. Perfect for multi-counter shops.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Keep Your Data Safe:</b> By giving the right access to the right people, you avoid mistakes and keep your business data fully secure.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Expense & Income Tracking -->
+                <div class="addon-panel hidden flex-col lg:flex-row gap-10 items-center w-full transition-opacity duration-500">
+                    <div class="lg:w-1/2 w-full flex justify-center">
+                        <img src="point-of-sale-software.webp" alt="Expense Tracking" class="w-full max-w-md rounded-xl shadow-md border border-gray-100">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">Record and monitor all your service income and daily shop expenses in a single place with our mobile billing software.</p>
+                        <ul class="space-y-4 text-sm text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Track Service Income:</b> If you offer services like mobile repair or software updates, record the exact amount earned from each service.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Manage Daily Expenses:</b> Log daily spending like rent, electricity bills, internet, or staff tea expenses directly in the system.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Know Your True Profit:</b> SadaPOS automatically deducts expenses from your income to show you your exact net profit.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 5: Item Categories & Brands -->
+                <div class="addon-panel hidden flex-col lg:flex-row gap-10 items-center w-full transition-opacity duration-500">
+                    <div class="lg:w-1/2 w-full flex justify-center">
+                        <img src="point-of-sale-system.jpg" alt="Categories and Brands" class="w-full max-w-md rounded-xl shadow-md border border-gray-100">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">With our app, you can manage phones, accessories, and other products by category and brand like Samsung, Apple, or Oppo.</p>
+                        <ul class="space-y-4 text-sm text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Group by Category:</b> Put products into simple groups like mobiles, covers, earphones, or chargers to find things quickly.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Sort by Brand:</b> Keep all items arranged by brand name so you always know how much stock you have for each specific brand.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Quick Billing:</b> With items grouped and sorted, you can add them to the cart faster during billing, making the customer experience smoother.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Panel 6: Reporting & Analytics -->
+                <div class="addon-panel hidden flex-col lg:flex-row gap-10 items-center w-full transition-opacity duration-500">
+                    <div class="lg:w-1/2 w-full flex justify-center">
+                        <img src="point-of-sale-software-reports.jpg" alt="Reporting and Analytics" class="w-full max-w-md rounded-xl shadow-md border border-gray-100">
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">SadaPOS gives you a clear picture of your sales and profit. It helps you understand your business better and make smart decisions using real-time data.</p>
+                        <ul class="space-y-4 text-sm text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Track Sales & Profits:</b> Easily check daily, weekly, and monthly sales reports along with detailed profit summaries.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Monitor Stock Movement:</b> Stay on top of fast-moving and slow-moving items to plan purchases better and avoid dead stock.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[#ED1A3B] mt-0.5 text-lg leading-none">•</span>
+                                <span><b>Identify Top Performers:</b> Find out which mobile products or categories give you the most income, helping you focus on what sells best.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Auto-Playing Tabs Logic -->
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const tabs = document.querySelectorAll('.addon-btn');
+                    const panels = document.querySelectorAll('.addon-panel');
+                    let currentIndex = 0;
+                    let autoPlayTimer;
+
+                    // Function to switch tabs
+                    function activateTab(index) {
+                        // Reset all tabs
+                        tabs.forEach(tab => {
+                            tab.classList.remove('bg-[#ED1A3B]', 'text-white', 'border-[#ED1A3B]');
+                            tab.classList.add('bg-white', 'text-gray-700', 'border-gray-300', 'hover:bg-gray-50');
+                        });
+                        
+                        // Hide all panels
+                        panels.forEach(panel => {
+                            panel.classList.remove('flex');
+                            panel.classList.add('hidden');
+                            panel.style.opacity = '0';
+                        });
+
+                        // Activate selected tab
+                        tabs[index].classList.remove('bg-white', 'text-gray-700', 'border-gray-300', 'hover:bg-gray-50');
+                        tabs[index].classList.add('bg-[#ED1A3B]', 'text-white', 'border-[#ED1A3B]');
+                        
+                        // Show selected panel with fade-in effect
+                        panels[index].classList.remove('hidden');
+                        panels[index].classList.add('flex');
+                        setTimeout(() => {
+                            panels[index].style.opacity = '1';
+                        }, 50);
+
+                        currentIndex = index;
+                    }
+
+                    // Function to start Auto-Play
+                    function startAutoPlay() {
+                        autoPlayTimer = setInterval(() => {
+                            let nextIndex = (currentIndex + 1) % tabs.length;
+                            activateTab(nextIndex);
+                        }, 4000); // Changes every 4 seconds
+                    }
+
+                    // Function to stop Auto-Play
+                    function stopAutoPlay() {
+                        clearInterval(autoPlayTimer);
+                    }
+
+                    // Add manual click event to tabs
+                    tabs.forEach((tab, index) => {
+                        tab.addEventListener('click', () => {
+                            stopAutoPlay(); // Stop auto-play when user clicks manually
+                            activateTab(index);
+                            startAutoPlay(); // Restart auto-play timer
+                        });
+                    });
+
+                    // Initialize first tab and start auto-play
+                    activateTab(0);
+                    startAutoPlay();
+                });
+            </script>
+        </section>
+        <!-- Why SadaPOS is the Best Section (3x2 Grid) -->
+        <section class="max-w-7xl mx-auto px-4 mb-24 relative z-10 pt-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 tracking-tighter mb-4">
+                    Why <span class="text-[#ED1A3B]">SadaPOS</span> is the Best Mobile Shop Billing Software?
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                    Built with simplicity and reliability in mind, SadaPOS provides an unmatched offline-first experience tailored for the modern retail environment.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Card 1 -->
+                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-20 h-20 rounded-full bg-purple-50 text-purple-500 border border-purple-100 flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Free Set-up & Easy Start</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">SadaPOS offers mobile shop billing software with a free plan and easy setup. You can start billing right away. No technical skills needed, just sign up and go.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-20 h-20 rounded-full bg-orange-50 text-orange-500 border border-orange-100 flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Works Without Internet</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">The billing software works smoothly even without internet, making it perfect for shops in areas with poor connectivity. All your data stays safe and gets synced once you're back online.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-20 h-20 rounded-full bg-amber-50 text-amber-500 border border-amber-100 flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">User-Friendly Management</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Managing your mobile shop is simple with SadaPOS. From billing to stock updates, everything is designed to be easy to use, so you spend less time learning and more time selling.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-20 h-20 rounded-full bg-cyan-50 text-cyan-500 border border-cyan-100 flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Customizable Invoices</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Create professional-looking bills with your mobile shop name, logo, and details. Choose what you want to show on the invoice and make it look just the way you want.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-20 h-20 rounded-full bg-pink-50 text-pink-500 border border-pink-100 flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Secure Data Storage</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Your business data is automatically backed up and safely stored in the cloud, so you never lose bills, reports, or customer info even if your device is lost or damaged.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-20 h-20 rounded-full bg-emerald-50 text-emerald-500 border border-emerald-100 flex items-center justify-center mb-6 shadow-sm">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile-Friendly Management</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Run your entire mobile shop from your smartphone or tablet. Create bills, check stock, send reminders, and track payments all from your mobile device, anytime, anywhere.</p>
+                </div>
+
             </div>
         </section>
 
-        <!-- Final Call to Action (CTA) Section -->
-        <section class="max-w-4xl mx-auto text-center relative z-10">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tighter leading-tight">
-                Ready to upgrade your mobile shop?
+        <!-- Naya "Pricing" Section (Vyapar-Style) -->
+        <section class="mt-32 max-w-7xl mx-auto text-center relative z-10 px-4 pb-10">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4 tracking-tighter">
+                Flexible Pricing for <span class="text-[#ED1A3B]">Every Stage</span> of Your Business
             </h2>
-            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-                Stop guessing and start scaling. Join thousands of mobile and electronics retailers who trust SadaPOS for their daily operations.
+            <p class="text-gray-500 text-lg mx-auto mb-16 leading-relaxed max-w-2xl">
+                We offer plans that match your needs. Start for free and upgrade only when your business grows. No hidden fees.
             </p>
-            <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="inline-flex items-center justify-center gap-2 bg-[#3ecf8e] text-[#121212] hover:bg-[#3ecf8e]/90 px-8 py-4 rounded-md text-lg font-bold transition-all duration-200 shadow-[0_0_20px_rgba(62,207,142,0.1)]">
-                Start Now for Free
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-            </a>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- 1. Growth Plan -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 text-left hover:shadow-lg transition-shadow relative flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Growth Plan</h3>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-3xl font-extrabold text-[#ED1A3B]">PKR 1199</span>
+                        <span class="text-gray-500 text-sm font-medium">/month</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6 pb-6 border-b border-gray-100 min-h-[4rem]">Perfect for growing shops. More items, more staff, more sales.</p>
+                    
+                    <ul class="space-y-3.5 mb-8 flex-1">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 2.5k Active stock items</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 100 Product models</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 300 Customer accounts</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 1 Staff seat</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Reports & analytics</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Pro Plan (Most Popular) -->
+                <div class="bg-red-50/30 border-2 border-[#ED1A3B] rounded-2xl p-8 text-left shadow-xl relative transform md:-translate-y-4 flex flex-col">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#ED1A3B] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-md whitespace-nowrap">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+                        Most Popular
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1 mt-2">Pro Plan</h3>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-3xl font-extrabold text-[#ED1A3B]">PKR 2399</span>
+                        <span class="text-gray-500 text-sm font-medium">/month</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6 pb-6 border-b border-red-100 min-h-[4rem]">Advanced tools for growing businesses requiring more staff and support.</p>
+                    
+                    <ul class="space-y-3.5 mb-8 flex-1">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> Everything in Growth plan</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 15k Active stock items</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 1,000 Customer accounts</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> 4 Staff seats</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Warranty system</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Custom reports & priority support</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Scale Plan -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 text-left hover:shadow-lg transition-shadow relative flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Scale Plan</h3>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-3xl font-extrabold text-[#ED1A3B]">PKR 4599</span>
+                        <span class="text-gray-500 text-sm font-medium">/month</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6 pb-6 border-b border-gray-100 min-h-[4rem]">Unrestricted resources for large-scale operations requiring maximum capacity.</p>
+                    
+                    <ul class="space-y-3.5 mb-8 flex-1">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700 font-semibold"><span class="text-emerald-500 font-bold">✓</span> Everything in Pro plan</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Unlimited stock & models</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Unlimited Customers</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Up to 10 Staff seats</li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-700"><span class="text-emerald-500 font-bold">✓</span> Free setup</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Link to full pricing page -->
+            <div class="mt-8 text-sm text-gray-500">
+                To see full features and yearly discounts, <a href="/pricing" class="text-[#ED1A3B] font-semibold hover:underline">please visit our detailed pricing page</a>.
+            </div>
+        </section>
+
+        <!-- Naya "FAQs" Section (Vyapar-Style Light-Mode) -->
+        <section class="mt-32 max-w-4xl mx-auto text-center relative z-10 pb-20">
+            
+            <!-- Tiny Pill Badge -->
+            <div class="inline-flex items-center justify-center gap-2 mb-4">
+                <span class="bg-red-50 border border-red-100 text-[#ED1A3B] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    FAQs
+                </span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4 tracking-tighter">
+                Frequently Asked <span class="text-[#ED1A3B]">Questions (FAQs)</span>
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-2xl mx-auto mb-16">
+                Got questions about our mobile shop software? We've got answers. If you can't find what you're looking for, our support team is always happy to help.
+            </p>
+
+            <!-- Accordion List -->
+            <div class="text-left space-y-4 max-w-3xl mx-auto">
+                
+                <!-- FAQ 1 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Is there a free billing software for mobile electronics stores?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Yes, SadaPOS offers a free-forever plan that includes core mobile shop billing features, IMEI tracking, and inventory management. You can easily upgrade as your store grows.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Is SadaPOS suitable for small mobile shops?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Absolutely. SadaPOS is designed to be highly user-friendly. Small mobile shop owners can easily manage sales, repairs, and stock without needing any technical expertise.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">What makes SadaPOS the best invoice software for mobile shops?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        SadaPOS allows you to track unique IMEI/Serial numbers, manage warranties, and process split payments. Plus, its offline-first capability ensures your billing never stops, even without the internet.
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group border border-gray-200 bg-white rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none p-5 text-gray-800 hover:text-[#ED1A3B] hover:bg-gray-50 transition-colors">
+                        <span class="text-base md:text-lg">Can I manage used (second-hand) phones and repairs?</span>
+                        <span class="transition duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2">
+                        Yes. You can add used phones as unique inventory items with their specific purchasing costs. Additionally, the system lets you track repair jobs, parts used, and labor charges all in one place.
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- Naya "Final CTA" Section (Vyapar-Style Crimson Box) -->
+        <section id="final-cta-section" class="mt-10 max-w-6xl mx-auto text-center relative z-10 px-4 mb-24">
+            <div class="bg-[#ED1A3B] rounded-3xl py-16 px-6 md:px-12 text-white relative overflow-hidden shadow-xl shadow-red-500/10">
+                
+                <!-- Background subtle decorative light gradient -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none"></div>
+
+                <!-- Main Heading -->
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tighter leading-tight relative z-10">
+                    Start Managing Your Mobile Shop Smarter Today
+                </h2>
+
+                <!-- Subheading -->
+                <p class="text-red-100 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed relative z-10">
+                    Join thousands of mobile and electronics retailers who trust SadaPOS for their daily operations. Get started in minutes, not days.
+                </p>
+
+                <!-- Buttons Container -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 relative z-10">
+                    <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="w-full sm:w-auto bg-white text-[#ED1A3B] hover:bg-red-50 px-8 py-3.5 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-black/5">
+                        Start Now for Free
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="/contact-us" class="w-full sm:w-auto border-2 border-white/80 hover:bg-white/10 text-white px-8 py-3 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2">
+                        Contact Sales
+                    </a>
+                </div>
+
+                <!-- Bottom Features List -->
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-red-100/90 font-medium relative z-10">
+                    <span class="flex items-center gap-1.5">🛡 100% Safe & Secure</span>
+                    <span class="flex items-center gap-1.5">⚡ Offline-First Sync</span>
+                    <span class="flex items-center gap-1.5">💳 No Credit Card Required</span>
+                </div>
+
+            </div>
         </section>
 
     </main>
@@ -632,6 +1149,64 @@ function gtag_report_conversion(url) {
             </div>
         </div>
     </footer>
+
+<!-- Sticky Bottom CTA Button (Vyapar-Style - Ultra Sleek & Compact Size) -->
+    <div id="sticky-bottom-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-3rem)] max-w-[290px] opacity-0 pointer-events-none translate-y-10 transition-all duration-500 ease-out">
+        
+        <a href="https://app.sadapos.com" onclick="return gtag_report_conversion('https://app.sadapos.com');" class="relative flex items-center justify-center w-full py-2.5 rounded-full bg-[#ED1A3B] hover:bg-[#D91532] shadow-[0_8px_30px_rgba(237,26,59,0.35)] transition-colors group overflow-hidden">
+            
+            <!-- Inner Light Track (Pushed 2px inside from the outer edge) -->
+            <div class="absolute inset-[2px] rounded-full overflow-hidden pointer-events-none">
+                <span class="absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,#FFD700_0%,transparent_25%,#FFD700_50%,transparent_75%,#FFD700_100%)] opacity-80 group-hover:opacity-100 transition-opacity"></span>
+                <!-- Inner Solid Core (Pushed 3px inside from the light track, making the light 3px thick) -->
+                <span class="absolute inset-[3px] rounded-full bg-[#ED1A3B] group-hover:bg-[#D91532] transition-colors"></span>
+            </div>
+            
+            <!-- Text and Icon (z-10 to stay above the light track) -->
+            <span class="relative z-10 flex items-center justify-center gap-1.5 text-white text-xs md:text-sm font-bold tracking-tight">
+                Start Now for Free
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </span>
+        </a>
+    </div>
+
+    <!-- Sticky Button Reveal & Smart Bottom Auto-Hide script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stickyCta = document.getElementById("sticky-bottom-cta");
+            const finalSection = document.getElementById("final-cta-section");
+            let isFinalSectionVisible = false;
+
+            if (stickyCta) {
+                // Intersection Observer to detect if we reached the final red CTA section
+                if (finalSection) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry) => {
+                            isFinalSectionVisible = entry.isIntersecting;
+                            updateStickyVisibility();
+                        });
+                    }, { threshold: 0.05 }); // Triggers when 5% of the final section is visible
+                    observer.observe(finalSection);
+                }
+
+                // Scroll event listener
+                window.addEventListener("scroll", updateStickyVisibility);
+
+                function updateStickyVisibility() {
+                    // Show sticky CTA only if we scrolled past 400px AND the final section is NOT visible
+                    if (window.scrollY > 400 && !isFinalSectionVisible) {
+                        stickyCta.classList.remove("opacity-0", "pointer-events-none", "translate-y-10");
+                        stickyCta.classList.add("opacity-100", "pointer-events-auto", "translate-y-0");
+                    } else {
+                        stickyCta.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+                        stickyCta.classList.add("opacity-0", "pointer-events-none", "translate-y-10");
+                    }
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
