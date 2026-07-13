@@ -1,15 +1,19 @@
-# SadaPOS
+# SadaPOS - Point of Sale Software for Retailers
 
-Point of sale software by sadapos is free and premium offline and cloud based pos system designed for retailers in Pakistan. 
+SadaPOS is a premium offline and cloud-based POS (Point of Sale) system designed specifically for retailers, mobile shops, and electronic stores in Pakistan. We help businesses manage IMEIs, serials, stock, and sales efficiently.
 
-## Key Features
-- Offline-First Architecture (Works 24/7 without internet)
-- Auto Cloud Sync
-- IMEI & Serials Tracking (Ideal for mobile shops)
-- Smart Stock & Inventory Management
-- Customer & Supplier Ledgers
-- Warranty & Repair Tracking
+## Core Features
+- **Offline-First:** Works 24/7 without internet.
+- **Auto Cloud Sync:** Syncs data automatically when back online.
+- **IMEI/Serial Tracking:** Perfect for mobile and electronic businesses.
+- **Inventory & Ledgers:** Smart stock management and customer ledgers.
+- **Warranty/Repair:** Dedicated tracking for repairs and warranties.
 
-## Links
-- Website: https://www.sadapos.com
-- App: https://app.sadapos.com
+## Important Links
+- [Home Page](https://www.sadapos.com/)
+- [Pricing](https://www.sadapos.com/pricing)
+- [POS For Mobile Business](https://www.sadapos.com/pos-for-mobile-business)
+- [Offline POS Software](https://www.sadapos.com/offline-pos-software-start-with-free-plan)
+- [About Us](https://www.sadapos.com/about-us)
+- [Contact Us](https://www.sadapos.com/contact-us)
+- [App Login](https://app.sadapos.com)
