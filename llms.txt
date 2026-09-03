@@ -10,7 +10,7 @@ SadaPOS is a premium offline and cloud-based POS (Point of Sale) system designed
 - **Warranty/Repair:** Dedicated tracking for repairs and warranties.
 
 ## Important Links
-- [Home Page](https://www.sadapos.com/)
+- [POS Software in Pakistan](https://www.sadapos.com/)
 - [Pricing](https://www.sadapos.com/pricing)
 - [POS For Mobile Business](https://www.sadapos.com/pos-for-mobile-business)
 - [Offline POS Software](https://www.sadapos.com/offline-pos-software-start-with-free-plan)
